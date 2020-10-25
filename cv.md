@@ -20,7 +20,7 @@ Dr.-Ing.
 `Current`
 __Principal Investigator__, Fraunhofer IDMT
 
-- Co-Investigator of the DFG-funded project *Informed Sound Activity Detection in Music Recordings (ISAD)* in collaboration with Prof. Dr. Meinard Müller from the International Audio Laboratories in Erlangen
+- Co-Investigator of the DFG-funded project *Informed Sound Activity Detection in Music Recordings (ISAD)* ([Project website](https://dfg-isad.github.io/)) in collaboration with Prof. Dr. Meinard Müller from the International Audio Laboratories in Erlangen
 - Student supervision
 - Teaching activities
 - Project aquisition & management
