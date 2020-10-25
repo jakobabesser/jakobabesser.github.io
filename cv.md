@@ -3,22 +3,17 @@ layout: resume
 ---
 ## Currently
 
-Current Position Description
+Post-doctoral Researcher, Fraunhofer IDMT
 
 ## Education
 
-`1990 - 1994`
-__University Name__
-Degree Awarded
+`2002 - 2008`
+__Technical University, Ilmenau__
+Dipl.-Ing.
 
-`1995 - 1997`
-__University Name__
-Degree Awarded 
-
-## Awards
-
-`2012`
-Name of Award, Organization 
+`2008 - 2014`
+__Technical University, Ilmenau__
+Dr.-Ing. 
 
 ## Publications
 
