@@ -15,51 +15,42 @@ Dipl.-Ing.
 __Technical University, Ilmenau__
 Dr.-Ing. 
 
-## Publications
-
-<!-- A list is also available [online](https://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
-
-### Journals
-
-`1994`
-Article Title, Journal Title
-
-`1994`
-Article Title, Journal Title
-
-### Books
-
-`1994`
-Book Title, Journal Title
-
-`1994`
-Book Title, Journal Title
-
-
-## Presentations
-
-`1994`
-Presentation Title, Conference, <a href="https://MyWebsite.tld/presentation1">Link to Presentation</a>
-
-
 ## Occupation
 
 `Current`
-__Current Job Title__, Current Employer 
+__Principal Investigator__, Fraunhofer IDMT
 
-- Task
-- Task
+- Co-Investigator of the DFG-funded project *Informed Sound Activity Detection in Music Recordings (ISAD)* in collaboration with Prof. Dr. Meinard Müller from the International Audio Laboratories in Erlangen
+- Student supervision
+- Teaching activities
+- Project aquisition & management
+- Research
 
-`1994-1996`
-__Current Job Title__, Current Employer 
+`2012-2017`
+__Research Assistant__, Jazzomat Research Project, Franz Liszt School of Music in Weimar, Germany
 
-- Task
-- Task
+- Developing methods for the computer-aided analysis of jazz improvisations
+
+`2010`
+__Guest Researcher__, Finnish Centre of Excellence in Interdisciplinary Music Research at the University of Jyväskylä, Finland
+
+- Computational performance analysis of music ensembles (jazz, funk, rock, etc.)
+
+`2008-2020`
+__Research Assistant__, Fraunhofer IDMT
+
+- Developing methods for the computer-aided analysis of jazz improvisations
+
+
+`2005`
+__Student__, Université Paul Verlain, Metz, France
+
+- Computer science studies
 
 
 
 <!-- ### Footer
 
-Last updated: May 2013 -->
+Last updated: Oct 2020 -->
 
 
