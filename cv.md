@@ -27,7 +27,7 @@ __Principal Investigator__, Fraunhofer IDMT
 - Research
 
 `2012-2017`
-__Research Assistant__, Jazzomat Research Project, Franz Liszt School of Music in Weimar, Germany
+__Research Assistant__, Jazzomat Research Project ((Project website)[https://jazzomat.hfm-weimar.de/]), Franz Liszt School of Music in Weimar, Germany
 
 - Developing methods for the computer-aided analysis of jazz improvisations
 
@@ -43,7 +43,7 @@ __Research Assistant__, Fraunhofer IDMT
 
 
 `2005`
-__Student__, Université Paul Verlain, Metz, France
+__Exchange Student__, Université Paul Verlain, Metz, France
 
 - Computer science studies
 
