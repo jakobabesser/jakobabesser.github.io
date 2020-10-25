@@ -3,7 +3,7 @@ layout: resume
 ---
 ## Currently
 
-Post-doctoral Researcher, Fraunhofer IDMT
+Principal Investigator, Fraunhofer IDMT
 
 ## Education
 
