@@ -1,0 +1,880 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>JabRef references</title>
+<meta http-equiv="Content-Type" content="text/html; charset=x-MacRoman">
+<script type="text/javascript">
+<!--
+// QuickSearch script for JabRef HTML export (no Abstract/BibTeX)
+// Version: 3.0
+//
+// Copyright (c) 2006-2011, Mark Schenk
+//
+// This software is distributed under a Creative Commons Attribution 3.0 License
+// http://creativecommons.org/licenses/by/3.0/
+//
+// Features:
+// - intuitive find-as-you-type searching
+//    ~ case insensitive
+//    ~ ignore diacritics (optional)
+//
+// - search with/without Regular Expressions
+// - match BibTeX key
+//
+
+// Search settings
+var noSquiggles = true; 	// ignore diacritics when searching
+var searchRegExp = false; 	// enable RegExp searches
+
+
+if (window.addEventListener) {
+	window.addEventListener("load",initSearch,false); }
+else if (window.attachEvent) {
+	window.attachEvent("onload", initSearch); }
+
+function initSearch() {
+	// check for quick search table and searchfield
+	if (!document.getElementById('qs_table')||!document.getElementById('quicksearch')) { return; }
+
+	// load all the rows and sort into arrays
+	loadTableData();
+	
+	//find the query field
+	qsfield = document.getElementById('qs_field');
+
+	// previous search term; used for speed optimisation
+	prevSearch = '';
+
+	//find statistics location
+	stats = document.getElementById('stat');
+	setStatistics(-1);
+	
+	// set up preferences
+	initPreferences();
+
+	// shows the searchfield
+	document.getElementById('quicksearch').style.display = 'block';
+	document.getElementById('qs_field').onkeyup = quickSearch;
+}
+
+function loadTableData() {
+	// find table and appropriate rows
+	searchTable = document.getElementById('qs_table');
+	var allRows = searchTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+	// split all rows into entryRows and infoRows (e.g. abstract, review, bibtex)
+	entryRows = new Array();
+
+	// get data from each row
+	entryRowsData = new Array();
+	
+	BibTeXKeys = new Array();
+	
+	for (var i=0, k=0, j=0; i<allRows.length;i++) {
+		if (allRows[i].className.match(/entry/)) {
+			entryRows[j] = allRows[i];
+			entryRowsData[j] = stripDiacritics(getTextContent(allRows[i]));
+			allRows[i].id ? BibTeXKeys[j] = allRows[i].id : allRows[i].id = 'autokey_'+j;
+			j ++;
+		}
+	}
+	//number of entries and rows
+	numEntries = entryRows.length;
+}
+
+function quickSearch(){
+	
+	tInput = qsfield;
+
+	if (tInput.value.length == 0) {
+		showAll();
+		setStatistics(-1);
+		qsfield.className = '';
+		return;
+	} else {
+		t = stripDiacritics(tInput.value);
+
+		if(!searchRegExp) { t = escapeRegExp(t); }
+			
+		// only search for valid RegExp
+		try {
+			textRegExp = new RegExp(t,"i");
+			qsfield.className = '';
+		}
+			catch(err) {
+			prevSearch = tInput.value;
+			qsfield.className = 'invalidsearch';
+			return;
+		}
+	}
+	
+	// count number of hits
+	var hits = 0;
+
+	// start looping through all entry rows
+	for (var i = 0; cRow = entryRows[i]; i++){
+
+		// only show search the cells if it isn't already hidden OR if the search term is getting shorter, then search all
+		if(cRow.className.indexOf('noshow')==-1 || tInput.value.length <= prevSearch.length){
+			var found = false; 
+
+			if (entryRowsData[i].search(textRegExp) != -1 || BibTeXKeys[i].search(textRegExp) != -1){ 
+				found = true;
+			}
+			
+			if (found){
+				cRow.className = 'entry show';
+				hits++;
+			} else {
+				cRow.className = 'entry noshow';
+			}
+		}
+	}
+
+	// update statistics
+	setStatistics(hits)
+	
+	// set previous search value
+	prevSearch = tInput.value;
+}
+
+
+// Strip Diacritics from text
+// http://stackoverflow.com/questions/990904/javascript-remove-accents-in-strings
+
+// String containing replacement characters for stripping accents 
+var stripstring = 
+    'AAAAAAACEEEEIIII'+
+    'DNOOOOO.OUUUUY..'+
+    'aaaaaaaceeeeiiii'+
+    'dnooooo.ouuuuy.y'+
+    'AaAaAaCcCcCcCcDd'+
+    'DdEeEeEeEeEeGgGg'+
+    'GgGgHhHhIiIiIiIi'+
+    'IiIiJjKkkLlLlLlL'+
+    'lJlNnNnNnnNnOoOo'+
+    'OoOoRrRrRrSsSsSs'+
+    'SsTtTtTtUuUuUuUu'+
+    'UuUuWwYyYZzZzZz.';
+
+function stripDiacritics(str){
+
+    if(noSquiggles==false){
+        return str;
+    }
+
+    var answer='';
+    for(var i=0;i<str.length;i++){
+        var ch=str[i];
+        var chindex=ch.charCodeAt(0)-192;   // Index of character code in the strip string
+        if(chindex>=0 && chindex<stripstring.length){
+            // Character is within our table, so we can strip the accent...
+            var outch=stripstring.charAt(chindex);
+            // ...unless it was shown as a '.'
+            if(outch!='.')ch=outch;
+        }
+        answer+=ch;
+    }
+    return answer;
+}
+
+// http://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
+// NOTE: must escape every \ in the export code because of the JabRef Export...
+function escapeRegExp(str) {
+  return str.replace(/[-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+}
+
+function setStatistics (hits) {
+	if(hits < 0) { hits=numEntries; }
+	if(stats) { stats.firstChild.data = hits + '/' + numEntries}
+}
+
+function getTextContent(node) {
+	// Function written by Arve Bersvendsen
+	// http://www.virtuelvis.com
+	
+	if (node.nodeType == 3) {
+	return node.nodeValue;
+	} // text node
+	if (node.nodeType == 1 && node.className != "infolinks") { // element node
+	var text = [];
+	for (var chld = node.firstChild;chld;chld=chld.nextSibling) {
+		text.push(getTextContent(chld));
+	}
+	return text.join("");
+	} return ""; // some other node, won't contain text nodes.
+}
+
+function showAll(){
+	for (var i = 0; i < numEntries; i++){ entryRows[i].className = 'entry show'; }
+}
+
+function clearQS() {
+	qsfield.value = '';
+	showAll();
+}
+
+function redoQS(){
+	showAll();
+	quickSearch(qsfield);
+}
+
+function updateSetting(obj){
+	var option = obj.id;
+	var checked = obj.value;
+
+	switch(option)
+	 {
+	 case "opt_useRegExp":
+	   searchRegExp=!searchRegExp;
+	   redoQS();
+	   break;
+	 case "opt_noAccents":
+	   noSquiggles=!noSquiggles;
+	   loadTableData();
+	   redoQS();
+	   break;
+	 }
+}
+
+function initPreferences(){
+	if(noSquiggles){document.getElementById("opt_noAccents").checked = true;}
+	if(searchRegExp){document.getElementById("opt_useRegExp").checked = true;}
+}
+
+function toggleSettings(){
+	var togglebutton = document.getElementById('showsettings');
+	var settings = document.getElementById('settings');
+	
+	if(settings.className == "hidden"){
+		settings.className = "show";
+		togglebutton.innerText = "close settings";
+		togglebutton.textContent = "close settings";
+	}else{
+		settings.className = "hidden";
+		togglebutton.innerText = "settings...";		
+		togglebutton.textContent = "settings...";
+	}
+}
+
+-->
+</script>
+<style type="text/css">
+body { background-color: white; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.2; padding: 1em; color: #2E2E2E; margin: auto 2em; }
+
+form#quicksearch { width: auto; border-style: solid; border-color: gray; border-width: 1px 0px; padding: 0.7em 0.5em; display:none; position:relative; }
+span#searchstat {padding-left: 1em;}
+
+div#settings { margin-top:0.7em; /* border-bottom: 1px transparent solid; background-color: #efefef; border: 1px grey solid; */ }
+div#settings ul {margin: 0; padding: 0; }
+div#settings li {margin: 0; padding: 0 1em 0 0; display: inline; list-style: none; }
+div#settings li + li { border-left: 2px #efefef solid; padding-left: 0.5em;}
+div#settings input { margin-bottom: 0px;}
+
+div#settings.hidden {display:none;}
+
+#showsettings { border: 1px grey solid; padding: 0 0.5em; float:right; line-height: 1.6em; text-align: right; }
+#showsettings:hover { cursor: pointer; }
+
+.invalidsearch { background-color: red; }
+input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
+
+table { width: 100%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none; }
+th, td { border: 1px gray solid; border-width: 1px 1px; padding: 0.5em; vertical-align: top; text-align: left; }
+th { background-color: #efefef; }
+td + td, th + th { border-left: none; }
+
+td a { color: navy; text-decoration: none; }
+td a:hover  { text-decoration: underline; }
+
+tr.noshow { display: none;}
+tr.highlight td { background-color: #EFEFEF; border-top: 2px #2E2E2E solid; font-weight: bold; }
+tr.abstract td, tr.review td, tr.bibtex td { background-color: #EFEFEF; text-align: justify; border-bottom: 2px #2E2E2E solid; }
+tr.nextshow td { border-bottom: 1px gray solid; }
+
+tr.bibtex pre { width: 100%; overflow: auto; white-space: pre-wrap;}
+p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
+
+@media print {
+	p.infolinks, #qs_settings, #quicksearch, t.bibtex { display: none !important; }
+	tr { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<form action="" id="quicksearch">
+<input type="text" id="qs_field" autocomplete="off" placeholder="Type to search..." /> <input type="button" onclick="clearQS()" value="clear" />
+<span id="searchstat">Matching entries: <span id="stat">0</span></span>
+<div id="showsettings" onclick="toggleSettings()">settings...</div>
+<div id="settings" class="hidden">
+<ul>
+<li><input type="checkbox" class="search_setting" id="opt_useRegExp" onchange="updateSetting(this)"><label for="opt_useRegExp"> use RegExp</label></li>
+<li><input type="checkbox" class="search_setting" id="opt_noAccents" onchange="updateSetting(this)"><label for="opt_noAccents"> ignore accents</label></li>
+</ul>
+</div>
+</form>
+<table id="qs_table" border="1">
+<thead><tr><th width="20%">Author</th><th width="30%">Title</th><th width="5%">Year</th><th width="30%">Journal/Proceedings</th><th width="10%">Reftype</th><th width="5%">DOI/URL</th></tr></thead>
+<tbody><tr id="Abesser:2020:AS" class="entry">
+	<td>Abe&szlig;er, J.</td>
+	<td>A Review of Deep Learning Based Methods for Acoustic Scene Classification</td>
+	<td>2020</td>
+	<td>applied sciences<br/>Vol. 10(6)&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://doi.org/10.3390/app10062020">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Clauss:2020:VDI" class="entry">
+	<td>Clau&szlig;, T. and Abe&szlig;er, J.</td>
+	<td>Identifikation ururban Ger&auml;uschquellen mittels maschineller Lernverfahren</td>
+	<td>2020</td>
+	<td>L&auml;rmbek&auml;mpfung(3)&nbsp;</td>
+	<td>article</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Nowakowsi:2020:CMMR" class="entry">
+	<td>Nowakowsi, M., Wei&szlig;, C. and Abe&szlig;er, J.</td>
+	<td>Towards Deep Learning Strategies for Transcribing Electroacoustic Music</td>
+	<td>2020</td>
+	<td>Proceedings of the 15th International Symposium on Computer Music Multidisciplinary Research (CMMR)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2019:DCASE" class="entry">
+	<td>Abe&szlig;er, J., G&ouml;tze, M., Clau&szlig;, T., Zapf, D., K&uuml;hn, C., Lukashevich, H., K&uuml;hnlenz, S. and Mimilakis, S.I.</td>
+	<td>Urban Noise Monitoring in the Stadtl&auml;rm Project - A Field Report</td>
+	<td>2019</td>
+	<td>Proceedings of the Detection and Classification of Acoustic Scenes and Events (DCASE) Workshop&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2019:ERCIM" class="entry">
+	<td>Abe&szlig;er, J. and Kepplinger, S.</td>
+	<td>Smart Solutions to Cope with Urban Noise Pollution</td>
+	<td>2019</td>
+	<td>ERCIM&nbsp;</td>
+	<td>article</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2019:ICASSP" class="entry">
+	<td>Abe&szlig;er, J. and M&uuml;ller, M.</td>
+	<td>Fundamental Frequency Contour Classification: A Comparison between Hand-Crafted and CNN-Based Features</td>
+	<td>2019</td>
+	<td>Proceedings of the 44th IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Grollmisch:2019:EUSIPCO" class="entry">
+	<td>Grollmisch, S., Abe&szlig;er, J., Liebetrau, J. and Lukashevich, H.</td>
+	<td>Sounding Industry: Challenges and Datasets for Industrial Sound Analysis (ISA)</td>
+	<td>2019</td>
+	<td>Proceedings of the 27th European Signal Processing Conference (EUSIPCO) (submitted)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Mimilakis:2019:MML" class="entry">
+	<td>Mimilakis, S.I., Wei&szlig;, C., Arifi-M&uuml;ller, V., Abe&szlig;er, J. and M&uuml;ller, M.</td>
+	<td>Cross-Version Singing Voice Detection in Opera Recordings: Challenges for Supervised Learning</td>
+	<td>2019</td>
+	<td>Proceedings of the 12th International Workshop on Machine Learning and Music (MML)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Nagar:2019:SMC" class="entry">
+	<td>Nagar, C.-R., Abe&szlig;er, J. and Grollmisch, S.</td>
+	<td>Towards CNN-based Acoustic Modeling of Seventh Chords for Recognition Chord Recognition</td>
+	<td>2019</td>
+	<td>Proceedings of the 16th Sound &amp; Music Computing Conference (SMC)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Taenzer:2019:ISMIR" class="entry">
+	<td>Taenzer, M., Abe&szlig;er, J., Mimilakis, S.I., Wei&szlig;, C., M&uuml;ller, M. and Lukashevich, H.</td>
+	<td>Investigating CNN-Based Instrument Family Recording for Western Classical Music Recordings</td>
+	<td>2019</td>
+	<td>Proceedings of the 20th International Society for Music Information Retrieval Conference (ISMIR)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser_2018_ISMIR" class="entry">
+	<td>Abe&szlig;er, J., Balke, S. and M&uuml;ller, M.</td>
+	<td>Improving Bass Saliency Estimation using Label Propagation and Transfer Learning</td>
+	<td>2018</td>
+	<td>Proceedings of the 19th International Society for Music Information Retrieval Conference (ISMIR), pp. 306-312&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2018:IEEE_FICLOUD" class="entry">
+	<td>Abe&szlig;er, J., Gr&auml;fe, R., K&uuml;hn, C., Clau&szlig;, T., Lukashevich, H., G&ouml;tze, M. and K&uuml;hnlenz, S.</td>
+	<td>A Distributed Sensor Network for Monitoring Noise Level and Noise Sources in Urban Environments</td>
+	<td>2018</td>
+	<td>Proceedings of the 6th IEEE International Conference on Future Internet of Things and Cloud (FiCloud), pp. 318-324&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Balke:2018:Frontiers" class="entry">
+	<td>Balke, S., Dittmar, C., Abe&szlig;er, J., Frieler, K., Pfleiderer, M. and M&uuml;ller, M.</td>
+	<td>Bridging the Gap: Enriching YouTube Videos with Jazz Music Annotations</td>
+	<td>2018</td>
+	<td>Frontiers in Digital Humanities<br/>Vol. 5, pp. 1&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://doi.org/10.3389/fdigh.2018.00001">DOI</a> <a href="https://www.frontiersin.org/article/10.3389/fdigh.2018.00001">URL</a>&nbsp;</td>
+</tr>
+<tr id="Clauss_2018_DAGA" class="entry">
+	<td>Clau&szlig;, T., Abe&szlig;er, J., Lukashevich, H., Gr&auml;fe, R., H&auml;user, F., K&uuml;hn, C. and Sporer, T.</td>
+	<td>Stadtl&auml;rm - a distributed system for noise level measurement and noise source identification in a smart city environment</td>
+	<td>2018</td>
+	<td>Proceedings of the Deutsche Jahrestagung für Akustik (DAGA), pp. 285-288&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Gomez_2018_ISMIR" class="entry">
+	<td>G&oacute;mez, J.S., Abe&szlig;er, J. and Cano, E.</td>
+	<td>Jazz Solo Instrument Classification with Convolutional Neural Networks, Source Separation, and Transfer Learning</td>
+	<td>2018</td>
+	<td>Proceedings of the 19th International Society for Music Information Retrieval Conference (ISMIR), pp. 577-584&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Weiss_2018_ISMIR" class="entry">
+	<td>Wei&szlig;, C., Balke, S., Abe&szlig;er, J. and M&uuml;ller, M.</td>
+	<td>Computational Corpus Analysis: A Case Study on Jazz Solos</td>
+	<td>2018</td>
+	<td>Proceedings of the 19th International Society for Music Information Retrieval Conference (ISMIR), pp. 416-423&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser_2017_IEEE_b" class="entry">
+	<td>Abe&szlig;er, J. and Schuller, G.</td>
+	<td>Instrument-Centered Music Transcription of Solo Bass Guitar Recordings</td>
+	<td>2017</td>
+	<td>IEEE/ACM Transactions on Audio, Speech, and Language Processing<br/>Vol. 25(9), pp. 1741-1750&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://doi.org/10.1109/TASLP.2017.2702384">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Abesser:2017:AES" class="entry">
+	<td>Abe&szlig;er, J., Balke, S., Frieler, K., Pfleiderer, M. and M&uuml;ller, M.</td>
+	<td>Deep Learning for Jazz Walking Bass Transcription</td>
+	<td>2017</td>
+	<td>Proceedings of the AES International Conference on Semantic Audio&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2017:AES_PROC" class="entry">
+	<td></td>
+	<td>Proceedings of the AES International Conference on Semantic Audio</td>
+	<td>2017</td>
+	<td>&nbsp;</td>
+	<td>proceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2017:DCASE" class="entry">
+	<td>Abe&szlig;er, J., Mimilakis, S.I., Gr&auml;fe, R. and Lukashevich, H.</td>
+	<td>Acoustic Scene Classification by Combining Autoencoder-Based Dimensionality Reduction and Convolutional Neural Networks</td>
+	<td>2017</td>
+	<td>Proceedings of the 2nd DCASE Workshop on Detection and Classification of Acoustic Scenes and Events&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2017:IEEE" class="entry">
+	<td>Abe&szlig;er, J., Frieler, K., Cano, E., Pfleiderer, M. and Zaddach, W.-G.</td>
+	<td>Score-Informed Analysis of Tuning, Intonation, Pitch Modulation, and Dynamics in Jazz Solos</td>
+	<td>2017</td>
+	<td>IEEE/ACM Transactions on Audio, Speech, and Language Processing<br/>Vol. 25(1), pp. 168-177&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://doi.org/10.1109/TASLP.2016.2627186">DOI</a> &nbsp;</td>
+</tr>
+<tr id="Pfleiderer:2017:BOOK" class="entry">
+	<td></td>
+	<td>Inside the Jazzomat - New Perspectives for Jazz Research</td>
+	<td>2017</td>
+	<td>&nbsp;</td>
+	<td>book</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Balke:2016:ISMIR" class="entry">
+	<td>Balke, S., Driedger, J., Abe&szlig;er, J. and M&uuml;ller, M.</td>
+	<td>Towards evaluating multiple predominant melody annotations in jazz recordings</td>
+	<td>2016</td>
+	<td>Proceedings of the 17th International Society for Music Information Retrieval Conference (ISMIR), pp. 246-252&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Boensel:2016:AES" class="entry">
+	<td>B&ouml;nsel, C., Abe&szlig;er, J., Grollmisch, S. and Mimilakis, S.I.</td>
+	<td>Automatic Best Take Detection for Electric Guitar and Vocal Studio Recordings</td>
+	<td>2016</td>
+	<td>Proceedings of the 2nd AES Workshop on Intelligent Music Production&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Frieler:2016:JF" class="entry">
+	<td>Frieler, K., Pfleiderer, M., Abe&szlig;er, J. and Zaddach., W.-G.</td>
+	<td>Chasing the Difference. Computer-aided Comparison of Improvisation in Post-bop, Hard bop, and Bebop.</td>
+	<td>2016</td>
+	<td>(to appear in) Jazzforschung / Jazz Research&nbsp;</td>
+	<td>article</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Frieler:2016:MS" class="entry">
+	<td>Frieler, K., Pfleiderer, M., Abe&szlig;er, J. and Zaddach., W.-G.</td>
+	<td>Midlevel analysis of monophonic jazz solos. A new approach to the study of improvisation</td>
+	<td>2016</td>
+	<td>Musicae Scientiae<br/>Vol. 20(2), pp. 143-162&nbsp;</td>
+	<td>article</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Mimilakis:2016:AES" class="entry">
+	<td>Mimilakis, S.I., Cano, E., Abe&szlig;er, J. and Schuller, G.</td>
+	<td>New sonorities for jazz recordings: separation and mixing using deep neural networks</td>
+	<td>2016</td>
+	<td>Proceedings of the 2nd AES Workshop on Intelligent Music Production&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2015:ISMIR" class="entry">
+	<td>Abe&szlig;er, J., Cano, E., Frieler, K., Pfleiderer, M. and Zaddach, W.-G.</td>
+	<td>Score-informed analysis of intonation and pitch modulation in jazz solos</td>
+	<td>2015</td>
+	<td>Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), pp. 823-829&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Matz:2015:ISMIR" class="entry">
+	<td>Matz, D., Cano, E. and Abe&szlig;er, J.</td>
+	<td>New Sonorities for Early Jazz Recordings Using Sound Source Separation and Automatic Mixing Tools</td>
+	<td>2015</td>
+	<td>Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), pp. 749-755&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Schuller:2015:ICASSP" class="entry">
+	<td>Schuller, G., Abe&szlig;er, J. and Kehling, C.</td>
+	<td>Parameter Extraction For Bass Guitar Sound Models Including Playing Styles</td>
+	<td>2015</td>
+	<td>Proceedings of the International Conference on Acoustics, Speech, and Signal Processing (ICASSP)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2014:AES" class="entry">
+	<td>Abe&szlig;er, J. and Schuller, G.</td>
+	<td>Instrument-centered Music Transcription of Bass Guitar Tracks</td>
+	<td>2014</td>
+	<td>Proceedings of the AES Conference on Semantic Audio&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2014:CIM" class="entry">
+	<td>Abe&szlig;er, J., Cano, E., Frieler, K. and Pfleiderer, M.</td>
+	<td>Dynamics in jazz improvisation - score-informed estimation and contextual analysis of tone intensities in trumpet and saxophone solos</td>
+	<td>2014</td>
+	<td>Proceedings of the Conference on Interdisciplinary Musicology (CIM), pp. 156-161&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2014:DAFX" class="entry">
+	<td>Abe&szlig;er, J., Pfleiderer, M., Frieler, K. and Zaddach, W.-G.</td>
+	<td>Score-informed Tracking and Contextual Analysis of Fundamental Frequency Contours in Trumpet and Saxophone Jazz Solos</td>
+	<td>2014</td>
+	<td>Proceedings of the International Conference on Digital Audio Effects (DAFx), pp. 181-186&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2014:PHD" class="entry">
+	<td>Abe&szlig;er, J.</td>
+	<td>Automatic Transcription of Bass Guitar Tracks applied for Music Genre Classification and Sound Synthesis</td>
+	<td>2014</td>
+	<td><i>School</i>: Technische Universit&auml;t Ilmenau&nbsp;</td>
+	<td>phdthesis</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Eppler:2014:CIM" class="entry">
+	<td>Eppler, A., M&auml;nnchen, A., Abe&szlig;er, J., Wei&szlig;, C. and Frieler, K.</td>
+	<td>Automatic style classification of jazz records with respect to rhythm, tempo, and tonality</td>
+	<td>2014</td>
+	<td>Proceedings of the Conference on Interdisciplinary Musicology (CIM), pp. 162-167&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Frieler:2014:FMA" class="entry">
+	<td>Frieler, K., Zaddach, W.-G. and Abe&szlig;er, J.</td>
+	<td>Exploring phrase form structures. Pt. II: Monophonic jazz solos</td>
+	<td>2014</td>
+	<td>Proceedings of the International Workshop on Folk Music Analysis (FMA), pp. 48-51&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Kehling:2014:DAFX" class="entry">
+	<td>Kehling, C., Abe&szlig;er, J., Dittmar, C. and Schuller, G.</td>
+	<td>Automatic Tablature Transcription of Electric Guitar Recordings by Estimation of Score- and Instrument-related Parameters</td>
+	<td>2014</td>
+	<td>Proceedings of the International Conference on Digital Audio Effects (DAFx)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Kruspe:2014:AES" class="entry">
+	<td>Kruspe, A.M., Abe&szlig;er, J. and Dittmar, C.</td>
+	<td>A GMM Approach to Singing Language Identification</td>
+	<td>2014</td>
+	<td>Proceedings of the AES International Conference on Semantic Audio, pp. 140-148&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2013:CMMRa" class="entry">
+	<td>Abe&szlig;er, J., Frieler, K., Pfleiderer, M. and Zaddach, W.-G.</td>
+	<td>Introducing the Jazzomat project - Jazz solo analysis using Music Information Retrieval methods</td>
+	<td>2013</td>
+	<td>Proceedings of the International Symposium on Computer Music Multidisciplinary Research (CMMR)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2013:CMMRb" class="entry">
+	<td>Abe&szlig;er, J., Hasselhorn, J., Dittmar, C., Lehmann, A. and Grollmisch, S.</td>
+	<td>Automatic Quality Assessment of Vocal and Instrumental Performances of Ninth-grade and Tenth-grade Pupils</td>
+	<td>2013</td>
+	<td>Proceedings of the International Symposium on Computer Music Multidisciplinary Research (CMMR)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2013:DAFX" class="entry">
+	<td>Abe&szlig;er, J., Kramer, P., Dittmar, C. and Schuller, G.</td>
+	<td>Parametric Audio Coding of Bass Guitar Recordings using a Tuned Physical Modeling Algorithm</td>
+	<td>2013</td>
+	<td>Proceedings of the International Conference on Digital Audio Effects (DAFx)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Dittmar:2013:WIAMIS" class="entry">
+	<td>Dittmar, C., M&auml;nnchen, A. and Abe&szlig;er, J.</td>
+	<td>Real-time guitar string detection for music education software</td>
+	<td>2013</td>
+	<td>Proceedings of the nternational Workshop on Image Analysis for Multimedia Interactive Services (WIAMIS)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Frieler:2013:FMA" class="entry">
+	<td>Frieler, K., Abe&szlig;er, J., Zaddach, W.-G. and Pfleiderer, M.</td>
+	<td>Introducing the Jazzomat Project and the Melo(S)py Library</td>
+	<td>2013</td>
+	<td>Proceedings of the International Workshop on Folk Music Analysis (FMA), pp. 76-78&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Grasis:2013:CMMR" class="entry">
+	<td>Grasis, M., Abe&szlig;er, J., Dittmar, C. and Lukashevich, H.</td>
+	<td>A Multiple-Expert Framework for Instrument Recognition</td>
+	<td>2013</td>
+	<td>Proceedings of the International Symposium on Computer Music Multidisciplinary Research (CMMR)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Kruspe:2013:AM" class="entry">
+	<td>Kruspe, A.M., Abe&szlig;er, J. and Dittmar, C.</td>
+	<td>Towards coarse-scale event detection in music</td>
+	<td>2013</td>
+	<td>Proceedings of the Audio Mostly Conference on Interaction with Sound&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2012:CMMR" class="entry">
+	<td>Abe&szlig;er, J.</td>
+	<td>Automatic String Detection for Bass Guitar and Electric Guitar</td>
+	<td>2012</td>
+	<td><br/>Vol. 7900From Sounds to Music and Emotions, pp. 333-352&nbsp;</td>
+	<td>incollection</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2012:JNMR" class="entry">
+	<td>Abe&szlig;er, J., Lukashevich, H. and Br&auml;uer, P.</td>
+	<td>Classification of Music Genres based on Repetitive Basslines</td>
+	<td>2012</td>
+	<td>Journal of New Music Research<br/>Vol. 41(3), pp. 239-257&nbsp;</td>
+	<td>article</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Dhandhania:2012:SMC" class="entry">
+	<td>Dhandhania, V., Abe&szlig;er, J., Kruspe, A. and Gro&szlig;mann, H.</td>
+	<td>Automatic and Manual Annotation of Time-Varying Perceptual Properties in Movie Soundtracks</td>
+	<td>2012</td>
+	<td>Proceedings of the Sound and Music Computing Conference (SMC), pp. 461-466&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Dittmar:2012:MMP" class="entry">
+	<td>Dittmar, C., Cano, E., Abe&szlig;er, J. and Grollmisch, S.</td>
+	<td>Music Information Retrieval Meets Music Education</td>
+	<td>2012</td>
+	<td><br/>Vol. 3Multimodal Music Processing, pp. 95-120&nbsp;</td>
+	<td>incollection</td>
+	<td><a href="http://doi.org/10.4230/DFU.Vol3.11041.95">DOI</a> <a href="http://drops.dagstuhl.de/opus/volltexte/2012/3468">URL</a>&nbsp;</td>
+</tr>
+<tr id="Dittmar:ICMPC:2012" class="entry">
+	<td>Dittmar, C., Abe&szlig;er, J., Grollmisch, S., Hasselhorn, J. and Lehmann, A.</td>
+	<td>Automatic singing assessment of pupil performances</td>
+	<td>2012</td>
+	<td>Proceedings of the International Conference on Music Perception and Cognition and the 8th Triennial conference of the European Society for the Cognitive Sciences of Music (ICMPC-ESCOM), pp. 263-264&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Kramer:2012:ICASSP" class="entry">
+	<td>Kramer, P., Abe&szlig;er, J., Dittmar, C. and Schuller, G.</td>
+	<td>A Digital Waveguide Model of the Electric Bass Guitar Including Different Playing Techniques</td>
+	<td>2012</td>
+	<td>Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 353-356&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Krasser:2012:AM" class="entry">
+	<td>Krasser, J., Abe&szlig;er, J., Gro&szlig;mann, H., Dittmar, C. and Cano, E.</td>
+	<td>Improved Music Similarity Computation based on Tone Objects</td>
+	<td>2012</td>
+	<td>Proceedings of the Audio Mostly Conference on Interaction with Sound&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2011:AES" class="entry">
+	<td>Abe&szlig;er, J., Dittmar, C. and Schuller, G.</td>
+	<td>Automatic Recognition and Parametrization of Frequency Modulation Techniques in Bass Guitar Recordings</td>
+	<td>2011</td>
+	<td>Proceedings of the Audio Engineering Society (AES) International Conference on Semantic Audio, pp. 1-8&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2011:ICASPP" class="entry">
+	<td>Abe&szlig;er, J., Lartillot, O., Dittmar, C., Eerola, T. and Schuller, G.</td>
+	<td>Modeling Musical Attributes to Characterize Ensemble Recordings using Rhythmic Audio Features</td>
+	<td>2011</td>
+	<td>Proceedings of the IEEE Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 189-192nul&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2011:ISMIR" class="entry">
+	<td>Abe&szlig;er, J. and Lartillot, O.</td>
+	<td>Modelling Musical Attributes to Characterize Two-Track Recordings with Bass and Drums</td>
+	<td>2011</td>
+	<td>Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), pp. 209-214&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Grossmann:2011:CSIST" class="entry">
+	<td>Gro&szlig;mann, H., Kruspe, A., Abe&szlig;er, J. and Lukashevich, H.</td>
+	<td>Towards Cross-Modal Search and Synchronization of Music and Video Streams</td>
+	<td>2011</td>
+	<td>Proceedings of the International Congress on Computer Science: Information Systems and Technology (CSIST)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Kruspe:2011:AES" class="entry">
+	<td>Kruspe, A., Lukashevich, H., Abe&szlig;er, J., Gro&szlig;mann, H. and Dittmar, C.</td>
+	<td>Automatic classification of music pieces into global cultural areas</td>
+	<td>2011</td>
+	<td>Proceedings of the AES International Conference on Semantic Audio, pp. 44-53&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Kruspe:2011:AM" class="entry">
+	<td>Kruspe, A., Lukashevich, H. and Abe&szlig;er, J.</td>
+	<td>Artist Filtering for Non-western Music Classification</td>
+	<td>2011</td>
+	<td>Proceedings of the Audio Mostly Conference: A Conference on Interaction with Sound, pp. 82-87&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2010:CMMR" class="entry">
+	<td>Abe&szlig;er, J., Lukashevich, H., Dittmar, C., Br&auml;uer, P. and Krause, F.</td>
+	<td>Rule-based classification of musical genres from a global cultural background</td>
+	<td>2010</td>
+	<td>Proceedings of the International Symposium on Computer Music Modeling and Retrieval (CMMR)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2010:ICASSP" class="entry">
+	<td>Abe&szlig;er, J., Lukashevich, H. and Schuller, G.</td>
+	<td>Feature-based Extraction of Plucking and Expression Styles of the Electric Bass Guitar</td>
+	<td>2010</td>
+	<td>Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 2290-2293&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2010:ISMIR" class="entry">
+	<td>Abe&szlig;er, J., Br&auml;uer, P., Lukashevich, H. and Schuller, G.</td>
+	<td>Bass Playing Style Detection Based on High-level Features and Pattern Similarity</td>
+	<td>2010</td>
+	<td>Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), pp. 93-98&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Dittmar:2010:CMMR" class="entry">
+	<td>Dittmar, C., Grollmisch, S., Lukashevich, H., Gro&szlig;mann, H., Cano, E. and Abe&szlig;er, J.</td>
+	<td>Songs2See and GlobalMusic2One: Two Ongoing Projects in Music Information Retrieval Research at Fraunhofer IDMT</td>
+	<td>2010</td>
+	<td>Proceeding of the International Symposium on Computer Music Modeling and Retrieval (CMMR), pp. 259-272&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Stein:2010:AES" class="entry">
+	<td>Stein, M., Abe&szlig;er, J., Dittmar, C. and Schuller, G.</td>
+	<td>Automatic Detection of Audio Effects in Guitar and Bass Recordings</td>
+	<td>2010</td>
+	<td>Proceedings of the Audio Engineering Society (AES) Convention, pp. 522-533&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Voelkel:2010:AM" class="entry">
+	<td>V&ouml;lkel, T., Abe&szlig;er, J., Dittmar, C. and Gro&szlig;mann, H.</td>
+	<td>Automatic Genre Classification of Latin American Music using Characteristic Rhythmic Patterns</td>
+	<td>2010</td>
+	<td>Proceedings of the 5th Audio Mostly Conference on Interaction with SoundProceedings of the Audio Mostly Conference on Interaction with Sound&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2009:ISMIR" class="entry">
+	<td>Abe&szlig;er, J., Lukashevich, H., Dittmar, C. and Schuller, G.</td>
+	<td>Genre Classification using Bass-Related High-Level Features and Playing Styles</td>
+	<td>2009</td>
+	<td>Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), pp. 453-458&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Brandenburg:2009:BOOK" class="entry">
+	<td>Brandenburg, K., Dittmar, C., Gruhne, M., Abe&szlig;er, J., Lukashevich, H., Dunker, P., G&auml;rtner, D., Wolter, K., Nowak, S. and Gro&szlig;mann, H.</td>
+	<td>Music search and recommendation</td>
+	<td>2009</td>
+	<td>Handbook of multimedia for digital entertainment and arts, pp. 349-384&nbsp;</td>
+	<td>incollection</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Lukashevich:2009:ISMIR" class="entry">
+	<td>Lukashevich, H., Abe&szlig;er, J., Dittmar, C. and Gro&szlig;mann, H.</td>
+	<td>From Multi-Labeling to Multi-Domain-Labeling: A Novel Two-Dimensional Approach to Music Genre Classification</td>
+	<td>2009</td>
+	<td>Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), pp. 459-464&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2008:AM" class="entry">
+	<td>Abe&szlig;er, J., Dittmar, C. and Gro&szlig;mann, H.</td>
+	<td>Automatic Genre and Artist Classification by Analyzing Improvised Solo Parts from Musical Recordings</td>
+	<td>2008</td>
+	<td>Proceedings of the Audio Mostly Conference on Interaction with Sound, pp. 127-131&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Abesser:2008:DAGA" class="entry">
+	<td>Dittmar, C. and Abe&szlig;er, J.</td>
+	<td>Automatic Music Transcription with User Interaction</td>
+	<td>2008</td>
+	<td>Proceedings of the Deutsche Jahrestagung f&uuml;r Akustik (DAGA)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<footer>
+ <small>Created by <a href="http://jabref.sourceforge.net">JabRef</a> on 25/10/2020.</small>
+</footer>
+
+<!-- file generated by JabRef -->
+
+</body>
+</html>
