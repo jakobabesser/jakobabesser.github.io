@@ -1,13 +1,13 @@
 ---
 layout: resume
 ---
-## Current / Former Students
+## Former Students
 
 * Christon Ragavan Nadar: Multitask Learning for Beat Detection and Chord Recognition in Music (Master Thesis, TU Ilmenau, 2020)
 * Matthias Nowakowski: Deep Learning-Architekturen für die Transkription elektroakustischer Musik (Bachelor Thesis, Hochschule Düsseldorf, 2019)
 * Sharvin Vittappan & Luljeta Sinani: Interpreting Deep Learning Models Applied to Audio Processing Tasks (Media Project, TU Ilmenau, 2019)
 * Juan José Villamar Villarreal & Purvaj Piyush Vaidya: Music Segmentation using Siamese Networks (Media Project, TU Ilmenau, 2019)
-* Hany Tawfik: Automatic Generaiton of Monophonic Melodies with Complexity Contraints using Deep Neural Networks (Master Thesis, TU Ilmenau, 2018)
+* Hany Tawfik: Automatic Generation of Monophonic Melodies with Complexity Contraints using Deep Neural Networks (Master Thesis, TU Ilmenau, 2018)
 * Juan Sebastián Gómez Canón: Automatic Instrument Recognition using Deep Convolutional Neural Networks (Master thesis, TU Ilmenau, 2018)
 * Lukas Schaller: Entwicklung und Evaluation von Verfahren zur Klassifikation von akustischen Szenen (Bachelor thesis, TU Ilmenau, 2016)
 * Sebastian Preuße: Entwicklung eines Algorithmus zur segmentweisen Klassifkation von Instrumentenfamilien (Bachelor thesis, TU Ilmenau, 2016)
@@ -34,7 +34,7 @@ Manipal University, 2011)
 * Johannes Krasser: Automatische Detektion von Spielfehlern in Aufnahmen von polyphonen Instrumenten (Bachelor thesis, TU Ilmenau, 2010)
 * Anna Kruspe: Automatic Classifcation of Musical Pieces into Global Cultural Areas (Diploma thesis, TU Ilmenau, 2010)
 * Matthias Kahl: Zur Klassifikation von Hauptinstrumenten aus polyphonen und multitimbralen Musikaufnahmen (Diploma thesis, Fachhochschule Schmalkalden, 2009)
-* Michael Stein: Entwicklung eines Verfahrens zur Detektion und Neutralisation verschiedener Effekte auf Bass- und Gitarrenaufnahmen innerhalb von Musikst+cken (Diploma thesis, TU Ilmenau, 2009).
+* Michael Stein: Entwicklung eines Verfahrens zur Detektion und Neutralisation verschiedener Effekte auf Bass- und Gitarrenaufnahmen innerhalb von Musikstücken (Diploma thesis, TU Ilmenau, 2009).
 * Alexander Belz, Lorenz Hüttner, Gregor Siegert: Verbesserung bestehender Verfahren zur Instrumentenerkennung durch die Detektion monotimbraler Bereiche innerhalb von Musikstücken (Media project, TU Ilmenau, 2009)
 
 
