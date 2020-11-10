@@ -39,7 +39,10 @@ __Guest Researcher__, Finnish Centre of Excellence in Interdisciplinary Music Re
 `2008-2020`
 __Research Assistant__, Fraunhofer IDMT
 
-- Developing methods for the computer-aided analysis of jazz improvisations
+- Software Development
+- Student supervision
+- Project acquisition & work
+- Research & Scientific Publications
 
 
 `2005`
@@ -51,6 +54,6 @@ __Exchange Student__, Université Paul Verlain, Metz, France
 
 <!-- ### Footer
 
-Last updated: Oct 2020 -->
+Last updated: Nov 2020 -->
 
 
