@@ -3,6 +3,7 @@ layout: resume
 ---
 ## Former Students
 
+* Jaydeep Chauhan & Prateek Pillai: Polyphonic Instrument Recognition in Jazz Recordings (Media Project, TU Ilmenau, 2020)
 * Christon Ragavan Nadar: Multitask Learning for Beat Detection and Chord Recognition in Music (Master Thesis, TU Ilmenau, 2020)
 * Matthias Nowakowski: Deep Learning-Architekturen für die Transkription elektroakustischer Musik (Bachelor Thesis, Hochschule Düsseldorf, 2019)
 * Sharvin Vittappan & Luljeta Sinani: Interpreting Deep Learning Models Applied to Audio Processing Tasks (Media Project, TU Ilmenau, 2019)
