@@ -62,6 +62,9 @@ __Exchange Student__, Université Paul Verlain, Metz, France
 - __Input interface for generating control signals by acoustic gestures__ (US9117429B2)
 - __Device, Method and Computer Program for Acoustic Monitoring of a Monitoring Area__ (US20210043193A1)
 
+## Acquired Projects
+
+- __Informed Sound Activity Detection in Music Recordings (ISAD)__ (2018-2020, DFG individual research grant, joint project with Prof. Meinard Müller, FAU Erlangen)
 
 <!-- ### Footer
 
