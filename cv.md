@@ -57,10 +57,14 @@ __Exchange Student__, Université Paul Verlain, Metz, France
 
 - Computer science studies
 
+## Patents
+
+- __Input interface for generating control signals by acoustic gestures__ (US9117429B2)
+- __Device, Method and Computer Program for Acoustic Monitoring of a Monitoring Area__ (US20210043193A1)
 
 
 <!-- ### Footer
 
-Last updated: Nov 2020 -->
+Last updated: Mar 2021 -->
 
 
