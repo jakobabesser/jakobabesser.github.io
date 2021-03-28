@@ -64,7 +64,7 @@ __Exchange Student__, Université Paul Verlain, Metz, France
 
 ## Acquired Projects
 
-- __Informed Sound Activity Detection in Music Recordings (ISAD)__ (2018-2020, DFG individual research grant, joint project with Prof. Meinard Müller, FAU Erlangen)
+- __Informed Sound Activity Detection in Music Recordings (ISAD)__ (2018-2020, DFG individual research grant, joint project with Prof. Meinard Müller, International Audio Laboratories / FAU Erlangen)
 
 <!-- ### Footer
 
