@@ -9,4 +9,4 @@ Also, I have a passion for playing & teaching music (bass guitar & percussion), 
 ## Current Interests and Projects:
 
 - *Groovecell* - online Learning Platform for Bass and Drums ([Project website](http://groovecell.de/), [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA))
-- *Machine Listening for Music and Sound Recognition* - mini lecture series to be held at the TU Ilmenau during this wintersemester [Lecture Page](https://machinelistening.github.io/)
+- *Machine Listening for Music and Sound Recognition* - mini lecture series held last winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/)
