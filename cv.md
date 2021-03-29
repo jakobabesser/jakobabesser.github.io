@@ -9,7 +9,7 @@ Principal Investigator, Fraunhofer IDMT
 
 * paper co-chair @ 2017 AES International Conference on Semantic Audio
 * guest editor @ journal of the AES special session issue on semantic music production
-* reviewer @ ISMIR, ICASSP, CMMR, SMC, IEEE/ACM Transactions on Audio, Speech, and Language Processing
+* reviewer @ ISMIR, ICASSP, CMMR, SMC, IEEE/ACM Transactions on Audio, Speech, and Language Processing, TISMIR
 
 
 ## Education
