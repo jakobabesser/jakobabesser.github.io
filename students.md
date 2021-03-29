@@ -3,6 +3,7 @@ layout: resume
 ---
 ## Former Students
 
+* Shen Ke: Modellierung der wahrgenommenen Lästigkeit von Geräuschen im städtischen Umfeld (Masterarbeit, TU Ilmenau, 2021)
 * Jaydeep Chauhan & Prateek Pillai: Polyphonic Instrument Recognition in Jazz Recordings (Media Project, TU Ilmenau, 2020)
 * Christon Ragavan Nadar: Multitask Learning for Beat Detection and Chord Recognition in Music (Master Thesis, TU Ilmenau, 2020)
 * Matthias Nowakowski: Deep Learning-Architekturen für die Transkription elektroakustischer Musik (Bachelor Thesis, Hochschule Düsseldorf, 2019)
