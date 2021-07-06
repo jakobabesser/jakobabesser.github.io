@@ -33,6 +33,13 @@ __Principal Investigator__, Fraunhofer IDMT
 - Project aquisition & management
 - Research
 
+`2014-2018`
+__Postdoctoral Researcher__, Fraunhofer IDMT
+
+- Project acquisition & management
+- Research & Scientific Publications
+- Teaching & Student Supervision
+
 `2012-2017`
 __Research Assistant__, Jazzomat Research Project ([Project website](https://jazzomat.hfm-weimar.de/)), Franz Liszt School of Music in Weimar, Germany
 
@@ -43,7 +50,7 @@ __Guest Researcher__, Finnish Centre of Excellence in Interdisciplinary Music Re
 
 - Computational performance analysis of music ensembles (jazz, funk, rock, etc.)
 
-`2008-2020`
+`2008-2014`
 __Research Assistant__, Fraunhofer IDMT
 
 - Software Development
