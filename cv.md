@@ -3,7 +3,7 @@ layout: resume
 ---
 ## Currently
 
-Principal Investigator, Fraunhofer IDMT
+Senior Scientist, Fraunhofer IDMT
 
 ## Scientific Activity
 
@@ -24,7 +24,7 @@ Dr.-Ing.
 
 ## Occupation
 
-`Current`
+`01/2018 – 07/2021`
 __Principal Investigator__, Fraunhofer IDMT
 
 - Co-Investigator of the DFG-funded project *Informed Sound Activity Detection in Music Recordings (ISAD)* ([Project website](https://dfg-isad.github.io/)) in collaboration with Prof. Dr. Meinard Müller from the International Audio Laboratories in Erlangen
