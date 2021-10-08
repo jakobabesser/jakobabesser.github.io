@@ -3,7 +3,12 @@ layout: resume
 ---
 ## Former Students
 
+* Jaydeep Chauhan: Multi-scale Sound Event Detection (Master Thesis, TU Ilmenau, 2021)
+* Sebastian Ribecky: Disentanglement Representation Learning for Music Annotation and Music Similarity (Master Thesis, TU Ilmenau, 2021)
 * Shen Ke: Modellierung der wahrgenommenen Lästigkeit von Geräuschen im städtischen Umfeld (Masterarbeit, TU Ilmenau, 2021)
+* Anil Vishnu & Hassan Anwar: Instrument Detection in Polyphonic Music (Multitimbral Sections) (Media Project, TU Ilmenau, 2021)
+* Danny Mauder & Jonathan Häusler: String Instrument Transcription using Deep Learning Algorithms (Media Project, TU Ilmenau, 2021)
+* Yutong Xiao: A systematic comparison of audio synthesis methods based on generative deep neural networks as data augmentation for environmental sound classification (Master Thesis, TU Ilmenau, 2020)
 * Jaydeep Chauhan & Prateek Pillai: Polyphonic Instrument Recognition in Jazz Recordings (Media Project, TU Ilmenau, 2020)
 * Christon Ragavan Nadar: Multitask Learning for Beat Detection and Chord Recognition in Music (Master Thesis, TU Ilmenau, 2020)
 * Matthias Nowakowski: Deep Learning-Architekturen für die Transkription elektroakustischer Musik (Bachelor Thesis, Hochschule Düsseldorf, 2019)
