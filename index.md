@@ -14,5 +14,7 @@ Also, I have a passion for playing & teaching music (bass guitar & percussion), 
 
 - *Machine Listening for Music and Sound Analysis* - 6-part lecture on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA). The lecture will be held for the second time this winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/) and will be continuously extended in the upcoming years. 
 
+- I'm a guest editor for the EURASIP Journal on Audio, Speech, and Music Processing (JASM) call: [Recent advances in computational sound scene analysis](https://asmp-eurasipjournals.springeropen.com/ssoundscene) (together with Emmanouil Benetos, Annamaria Mesaros, Wenwu Wang)
+
 - *Groovecell* - online Learning Platform for Bass and Drums ([Project website](http://groovecell.de/), [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA), [Online Courses on Soundslice](https://www.soundslice.com/users/groovecell/courses/))
 
