@@ -24,6 +24,9 @@ Dr.-Ing.
 
 ## Occupation
 
+`Since 04/2021`
+__Senior Scientist__, Fraunhofer IDMT
+
 `01/2018 – 07/2021`
 __Principal Investigator__, Fraunhofer IDMT
 
