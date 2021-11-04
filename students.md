@@ -3,6 +3,7 @@ layout: resume
 ---
 ## Former Students
 
+* Marvin Bachmann & Benedikt Schuppert: Detection and Localization of Anomalous Industrial Sounds (Media Project, TU Ilmenau, 2021)
 * Jaydeep Chauhan: Multi-scale Sound Event Detection (Master Thesis, TU Ilmenau, 2021)
 * Sebastian Ribecky: Disentanglement Representation Learning for Music Annotation and Music Similarity (Master Thesis, TU Ilmenau, 2021)
 * Shen Ke: Modellierung der wahrgenommenen Lästigkeit von Geräuschen im städtischen Umfeld (Masterarbeit, TU Ilmenau, 2021)
