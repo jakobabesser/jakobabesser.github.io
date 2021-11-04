@@ -1,7 +1,7 @@
 ---
 layout: resume
 ---
-## Former Students
+## Supervised & Co-Supervised Student Works
 
 * Marvin Bachmann & Benedikt Schuppert: Detection and Localization of Anomalous Industrial Sounds (Media Project, TU Ilmenau, 2021)
 * Jaydeep Chauhan: Multi-scale Sound Event Detection (Master Thesis, TU Ilmenau, 2021)
