@@ -12,6 +12,10 @@ Senior Scientist, Fraunhofer IDMT
 * guest editor @ journal of the AES special session issue on semantic music production
 * reviewer @ ISMIR, ICASSP, CMMR, SMC, IEEE/ACM Transactions on Audio, Speech, and Language Processing, TISMIR
 
+## Memberships
+
+* German Acoustical Society (DEGA) 
+* International Society for Music Information Retrieval (ISMIR) 
 
 ## Education
 
