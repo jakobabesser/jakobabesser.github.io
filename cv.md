@@ -7,9 +7,9 @@ Senior Scientist, Fraunhofer IDMT
 
 ## Scientific Activity
 
-* guest editor @ EURASIP Journal on Audio, Speech, and Music Processing (JASM) call: "Recent advances in computational sound scene analysis" (2021/22)
-* paper co-chair @ 2017 AES International Conference on Semantic Audio
-* guest editor @ journal of the AES special session issue on semantic music production
+* guest editor @ [EURASIP Journal on Audio, Speech, and Music Processing (JASM) call: "Recent advances in computational sound scene analysis" (2021/22)](https://asmp-eurasipjournals.springeropen.com/ssoundscene)
+* paper co-chair @ 2017 [AES International Conference on Semantic Audio](https://www.aes.org/conferences/2017/semantic/)
+* guest editor @ [AES special session issue on semantic music production](https://www.aes.org/journal/pdfs/2019/CfP_SMP_2019.pdf)
 * reviewer @ ISMIR, ICASSP, CMMR, SMC, IEEE/ACM Transactions on Audio, Speech, and Language Processing, TISMIR
 
 ## Memberships
