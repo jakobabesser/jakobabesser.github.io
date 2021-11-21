@@ -1,6 +1,15 @@
 ---
 layout: resume
 ---
+
+## Co-Supervised PhD Students
+
+* Dipl.-Inf. Michael Taenzer
+* M.Sc. Christon Ragavan Nadar
+* Dipl.-Ing. Sascha Grollmisch
+* Dipl.-Ing. Christian Kehling
+
+
 ## Supervised & Co-Supervised Student Works
 
 * Marvin Bachmann & Benedikt Schuppert: Detection and Localization of Anomalous Industrial Sounds (Media Project, TU Ilmenau, 2021)
