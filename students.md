@@ -2,7 +2,7 @@
 layout: resume
 ---
 
-## Co-Supervised PhD Students
+## PhD Students (Day-To-Day Supervision)
 
 * Dipl.-Inf. Michael Taenzer
 * M.Sc. Christon Ragavan Nadar
