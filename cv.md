@@ -17,6 +17,15 @@ Senior Scientist, Fraunhofer IDMT
 * German Acoustical Society (DEGA) 
 * International Society for Music Information Retrieval (ISMIR) 
 
+## Awards / Honurs
+
+* 2005: ERASMUS scholarship
+* 2010: DAAD Scholarship - "Kurzzeitstipendium für Doktoranden"
+* 2019: Best Paper Award @ 14th International Symposium on Computer Music Multidisciplinary Research (CMMR): "Towards Deep Learning Strategies for Transcribing Electroacoustic Music" (Matthias Nowakowski, Christof Weiß and Jakob Abeßer) 
+* 2021: Best Paper Award @ 15th International Symposium on Computer Music Multidisciplinary Research (CMMR) "Deep Learning-Based Music Instrument Recognition: Exploring Learned Feature Representations" (Michael Taenzer, Stylianos I. Mimilakis and Jakob Abeßer)
+
+
+
 ## Education
 
 `2002 - 2008`
