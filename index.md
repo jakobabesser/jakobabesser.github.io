@@ -8,6 +8,8 @@ Also, I have a big passion for playing & teaching music (bass guitar & percussio
 
 ## News and Projects:
 
+- Best paper award at the CMMR 2021 for our paper "Deep Learning-Based Music Instrument Recognition: Exploring Learned Feature Representations" (Michael Taenzer, Stylianos I. Mimilakis and Jakob Abeßer) (https://mobile.twitter.com/cmmr_2021/status/1461524710110334978)
+
 - Two abstracts submitted to DAGA 2022: [Analyzing Bird and Bat Activity in Agricultural Environments using AI-driven Audio Monitoring](Abesser_2022_DAGA_1.pdf) (collaboration with Prof. Christoph Scherber, Dr. Svenja Bänsch, Xiaoyi Wang, and Hanna Lukashevich) and [Construction-sAIt: Multi-modal AI-driven technologies for construction site monitoring](Abesser_2022_DAGA_2.pdf) (collaboration with Dr. Alexander Loos and Prachi Sharma) 
 
 - New pre-print published: [Towards Audio Domain Adaptation for Acoustic Scene Classification using Disentanglement Learning](https://arxiv.org/abs/2110.13586) (collaboration with Prof. Meinard Müller)
