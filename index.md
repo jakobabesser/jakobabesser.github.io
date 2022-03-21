@@ -7,6 +7,9 @@ I am a senior scientist at Fraunhofer IDMT with a focus on applied research in m
 Also, I have a big passion for playing & teaching music (bass guitar & percussion).
 
 ## News
+- Small dataset published for piano multipitch estimation evaluation: [PIANO-AUG - Piano Multipitch Estimation with Augmentation Dataset](https://zenodo.org/record/6327395#.YjhzqPXMK3If)
+
+- Paper accepted for the AES Europe Spring 2022 (AES's 152nd convention): "Classifying Sounds in Polyphonic Urban Sound Scenes"
 
 - Abstract accepted at the DMRN+16 Digital Music Research Network One-day Workshop 2021: [A Benchmark Dataset to Study Microphone Mismatch Conditions for Piano Multipitch Estimation on Mobile Devices](Abesser_2022_DMRN.pdf) (collaboration with Franca Bittner, Maike Richter, Marcel Gonzalez, and Hanna Lukashevich)
 
