@@ -12,6 +12,8 @@ layout: resume
 
 ## Supervised & Co-Supervised Student Works
 
+* Franca Bittner & Marcel Gonzalez & Maike Richter: Unsupervised Domain Adaptation for Multipitch Estimation on Mobile Devices (Media Project, TU Ilmenau, 2022)
+* Pitchapa Ngamthipwatthana & Temitope Olanrewaju Adewumi: Comparative Analysis of Beat Tracking Procedures for Music Recordings (Media Project, TU Ilmenau, 2022)
 * Marvin Bachmann & Benedikt Schuppert: Detection and Localization of Anomalous Industrial Sounds (Media Project, TU Ilmenau, 2021)
 * Jaydeep Chauhan: Multi-scale Sound Event Detection (Master Thesis, TU Ilmenau, 2021)
 * Sebastian Ribecky: Disentanglement Representation Learning for Music Annotation and Music Similarity (Master Thesis, TU Ilmenau, 2021)
