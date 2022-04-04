@@ -3,7 +3,9 @@ layout: resume
 ---
 ## Currently
 
-Senior Scientist, Fraunhofer IDMT
+Senior Scientist (Fraunhofer IDMT) & Co-Investigator of the DFG-funded project *Informed Sound Activity Detection in Music and Audio Recordings (ISAD 2)* in collaboration with Prof. Dr. Meinard Müller from the International Audio Laboratories in Erlangen
+
+Postdoctoral Researcher (International Audio Laboratories Erlangen)
 
 ## Scientific Activity
 
