@@ -3,10 +3,14 @@ layout: page
 excerpt: "About Me..."
 ---
 
-I am a senior scientist at Fraunhofer IDMT with a focus on applied research in music information retrieval & machine listening applying techniques from machine learning / deep learning and audio signal processing.
+I am a senior scientist at Fraunhofer IDMT with a focus on applied research in music information retrieval & machine listening.
+Here, I combine techniques from machine learning / deep learning and audio signal processing.
 Also, I have a big passion for playing & teaching music (bass guitar & percussion).
 
 ## News
+
+- Published a novel version of the [Urban Sound Monitoring (USM)](https://github.com/jakobabesser/USM) dataset for sound event tagging in polyphonic soundscapes.
+
 - Small dataset published for piano multipitch estimation evaluation: [PIANO-AUG - Piano Multipitch Estimation with Augmentation Dataset](https://zenodo.org/record/6327395#.YjhzqPXMK3If)
 
 - Paper accepted for the AES Europe Spring 2022 (AES's 152nd convention): "Classifying Sounds in Polyphonic Urban Sound Scenes"
