@@ -9,6 +9,8 @@ Also, I have a big passion for playing & teaching music (bass guitar & percussio
 
 ## News
 
+- Last week, I gave a presentation entitled "Erkennung akustischer Quellen in komplexen Szenarien" (in German) at the [17. Jenaer Akustik-Tag](https://www.eah-jena.de/mb/studium/laborbereiche/akustik/jenaer-akustiktag).
+
 - Published a novel version of the [Urban Sound Monitoring (USM)](https://github.com/jakobabesser/USM) dataset for sound event tagging in polyphonic soundscapes.
 
 - Small dataset published for piano multipitch estimation evaluation: [PIANO-AUG - Piano Multipitch Estimation with Augmentation Dataset](https://zenodo.org/record/6327395#.YjhzqPXMK3If)
