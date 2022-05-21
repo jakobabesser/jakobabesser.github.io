@@ -9,7 +9,9 @@ Also, I have a big passion for playing & teaching music (bass guitar & percussio
 
 ## News
 
-- Last week, I gave a presentation entitled "Erkennung akustischer Quellen in komplexen Szenarien" (in German) at the [17. Jenaer Akustik-Tag](https://www.eah-jena.de/mb/studium/laborbereiche/akustik/jenaer-akustiktag).
+- 19.05.2022: I gave a talk at the AES Europe Spring Convention on [Classifying Sounds in Polyphonic Urban Sound Scenes](https://aeseuropespring2022.sched.com/event/10BX8/classifying-sounds-in-polyphonic-urban-sound-scenes-stream-b), where I introduced the [Urban Sound Monitoring (USM) dataset](https://github.com/jakobabesser/usm)
+
+- 27.04.2022: I gave a presentation entitled "Erkennung akustischer Quellen in komplexen Szenarien" (in German) at the [17. Jenaer Akustik-Tag](https://www.eah-jena.de/mb/studium/laborbereiche/akustik/jenaer-akustiktag).
 
 - Published a novel version of the [Urban Sound Monitoring (USM)](https://github.com/jakobabesser/USM) dataset for sound event tagging in polyphonic soundscapes.
 
