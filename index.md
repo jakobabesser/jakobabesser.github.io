@@ -11,8 +11,20 @@ One the "music" side, I'm mostly interested in automatic music transcription and
 
 Besides my research, I have a big passion for playing & teaching music (bass guitar & percussion).
 
-## News
+## Projects
 
+- *KI-gestützte Audioanalyse von Musik und Soundscapes* - Bi-weekly seminar at the [HfM Weimar](https://www.hfm-weimar.de), which will be held jointly with Prof. Martin Pfleiderer over the winter semester 2022/23.
+
+- *Machine Listening for Music and Sound Analysis* - 6-part lecture on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA)
+   - The lecture will be held for the third time this winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/) and will be continuously extended in the upcoming years. 
+
+- *Groovecell* - Online Learning for Bass and Drums 
+   - [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA)
+
+- *LMNT7* - Progressive Rock
+   - [BandCamp](https://lmnt7.bandcamp.com/)
+   
+## News
 
 - 20.07.2022: I'm honored to be invited to be part of the [editorial board of the EURASIP Journal on Audio, Speech, and Music Processing](https://asmp-eurasipjournals.springeropen.com/about/editorial-board)
 
@@ -38,14 +50,4 @@ Besides my research, I have a big passion for playing & teaching music (bass gui
 
 - I'm a guest editor for the EURASIP Journal on Audio, Speech, and Music Processing (JASM) call: [Recent advances in computational sound scene analysis](https://asmp-eurasipjournals.springeropen.com/ssoundscene) (together with Emmanouil Benetos, Annamaria Mesaros, Wenwu Wang)
 
-## Projects
 
-- *Machine Listening for Music and Sound Analysis* - 6-part lecture on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA)
-   - The lecture will be held for the second time this winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/) and will be continuously extended in the upcoming years. 
-
-- *Groovecell* - Online Learning for Bass and Drums 
-   - [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA)
-   - [Online Courses on Soundslice](https://www.soundslice.com/users/groovecell/courses/))
-
-- *LMNT7* - Progressive Rock
-   - [BandCamp](https://lmnt7.bandcamp.com/)
