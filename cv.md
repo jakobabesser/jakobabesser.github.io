@@ -9,7 +9,7 @@ Postdoctoral Researcher (International Audio Laboratories Erlangen)
 
 ## CV & Publication List
 
-* [**CV - Jakob Abeßer (19.08.2022) - PDF**](cv_jakob_abesser_220819.pdf)
+* [**CV + Publications (19.08.2022) - PDF**](cv_jakob_abesser_220819.pdf)
 
 <!-- ### Footer
 
