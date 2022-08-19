@@ -11,15 +11,18 @@ One the "music" side, I'm mostly interested in automatic music transcription and
 
 Besides my research, I have a big passion for playing & teaching music (bass guitar & percussion).
 
-## Projects
+## Current Projects
 
 - *KI-gestützte Audioanalyse von Musik und Soundscapes* - Bi-weekly seminar at the [HfM Weimar](https://www.hfm-weimar.de), which will be held jointly with Prof. Martin Pfleiderer over the winter semester 2022/23.
 
+
 - *Machine Listening for Music and Sound Analysis* - 6-part lecture on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA)
-   - The lecture will be held for the third time this winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/) and will be continuously extended in the upcoming years. 
+   - The lecture will be held for the third time this winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/) and will be continuously extended in the upcoming years.
+
 
 - *Groovecell* - Online Learning for Bass and Drums 
    - [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA)
+
 
 - *LMNT7* - Progressive Rock
    - [BandCamp](https://lmnt7.bandcamp.com/)
