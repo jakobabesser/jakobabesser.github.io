@@ -3,12 +3,13 @@ layout: page
 excerpt: "About Me..."
 ---
 
-I am a senior scientist at Fraunhofer IDMT with a focus on applied research in music information retrieval & machine listening.
-Here, I combine techniques from machine learning / deep learning and audio signal processing.
-My research interest covers ambient sound analysis tasks such as sound event detection, sound polyphony estimation, and acoustic scene classification and possible applications in urban sound monitoring and bioacoustic.
-One the "music side", I'm very interested in automatic music transcription and instrument recognition.
+I am a senior scientist at Fraunhofer IDMT with a focus on applied research in music information retrieval & machine listening and I'm currently working on my habilitation at the [TU Ilmenau](https://www.tu-ilmenau.de).
 
-Also, I have a big passion for playing & teaching music (bass guitar & percussion).
+In my research, I combine techniques from machine learning / deep learning and audio signal processing.
+On the "ambient sound" side, I work mostly on sound event detection, sound polyphony estimation, and acoustic scene classification and possible applications for urban sound monitoring and bioacoustic research.
+One the "music" side, I'm mostly interested in automatic music transcription and instrument recognition.
+
+Besides my research, I have a big passion for playing & teaching music (bass guitar & percussion).
 
 ## News
 
