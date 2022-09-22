@@ -29,6 +29,8 @@ Besides my research, I have a big passion for playing & teaching music (bass gui
    
 ## News
 
+- 22.09.2022: I'm happy to co-organize a structured session entitled **Sound Analysis for Music and Audio Signals** ([Details](https://www.daga2023.de/programm/vortraege-und-poster)) at the upcoming [DAGA 2023](https://www.daga2023.de/) together with [Prof. Meinard Müller](https://www.audiolabs-erlangen.de/fau/professor/mueller) and [Prof. Sebastian Stober](https://www.ovgu.de/stober-path-2,9459,14965,15772,15774.html)
+
 - 20.07.2022: I'm honored to be invited to be part of the [editorial board of the EURASIP Journal on Audio, Speech, and Music Processing](https://asmp-eurasipjournals.springeropen.com/about/editorial-board)
 
 - 14.07.2022: Our ISMIR paper "Multi-pitch Estimation meets Microphone Mismatch: Applicability of Domain Adaptation" (co-authored with Franca Bittner, Marcel Gonzales, Maike Richter, and Hanna Lukashevich) was accepted!
