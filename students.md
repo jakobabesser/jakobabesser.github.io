@@ -12,6 +12,8 @@ layout: resume
 
 ## Supervised & Co-Supervised Student Works
 
+* Noel Toms & Prathyusha Velamoor Srinivasan & Varshitha Chamanahalli Ramanna: Music Segmentation using Convolutional Neural Networks (Media Project, TU Ilmenau, 2022)
+* Param Tushar Gadam: Applying Per-Instrument Polyphony Information in the Automatic Transcription of Multitimbral Polyphonic Music (Master Thesis, TU Ilmenau, 2022)
 * Juan Jose Villamar Villarreal: Deep Learning based Drum Transcription (Master Thesis, TU Ilmenau, 2022)
 * Franca Bittner & Marcel Gonzalez & Maike Richter: Unsupervised Domain Adaptation for Multipitch Estimation on Mobile Devices (Media Project, TU Ilmenau, 2022)
 * Pitchapa Ngamthipwatthana & Temitope Olanrewaju Adewumi: Comparative Analysis of Beat Tracking Procedures for Music Recordings (Media Project, TU Ilmenau, 2022)
