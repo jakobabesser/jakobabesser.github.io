@@ -4,10 +4,10 @@ layout: resume
 
 ## PhD Students (Day-To-Day Supervision)
 
-* Dipl.-Inf. Michael Taenzer
 * M.Sc. Christon Ragavan Nadar
 * Dipl.-Ing. Sascha Grollmisch
 * Dipl.-Ing. Christian Kehling
+* Dipl.-Inf. Michael Taenzer
 
 
 ## Supervised & Co-Supervised Student Works
