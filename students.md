@@ -12,6 +12,7 @@ layout: resume
 
 ## Supervised & Co-Supervised Student Works
 
+* Vineet S. Kumar: Broadcasting Residual Networks (Internship, RWTH Aachen, 2022)
 * Noel Toms & Prathyusha Velamoor Srinivasan & Varshitha Chamanahalli Ramanna: Music Segmentation using Convolutional Neural Networks (Media Project, TU Ilmenau, 2022)
 * Param Tushar Gadam: Applying Per-Instrument Polyphony Information in the Automatic Transcription of Multitimbral Polyphonic Music (Master Thesis, TU Ilmenau, 2022)
 * Juan Jose Villamar Villarreal: Deep Learning based Drum Transcription (Master Thesis, TU Ilmenau, 2022)
