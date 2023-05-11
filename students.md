@@ -4,11 +4,14 @@ layout: resume
 
 ## PhD Students (Day-To-Day Supervision)
 
-* M.Sc. Christon Ragavan Nadar
+* M.Sc. Amir Latifi Bidarouni
 * Dipl.-Ing. Sascha Grollmisch
 * Dipl.-Ing. Christian Kehling
-* Dipl.-Inf. Michael Taenzer
 
+## Former PhD Students
+
+* M.Sc. Christon Ragavan Nadar
+* Dipl.-Inf. Michael Taenzer
 
 ## Supervised & Co-Supervised Student Works
 
