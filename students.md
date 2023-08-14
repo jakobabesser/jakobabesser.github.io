@@ -15,6 +15,10 @@ layout: resume
 
 ## Supervised & Co-Supervised Student Works
 
+* Asad Ullah: Improving a System for Bioacoustics Sound Event Detection based on Few-Shot Learning (Master Thesis, TU Ilmenau, 2023)
+* Jakob Lerch: Generation of Symbolic Music Based on MusicVAE (Bachelor Thesis, TU Ilmenau, 2023)
+* Pelin Durmaz & Shounak Shekhar Saraf: Unifying Taxonomies for Music Emotion Recognition (Media Project, TU Ilmenau, 2023)
+* Sebastian Ziegler: Audio Dataset Management, Listening Test for Sound Polyphony Estimation, Webdemo for IDMT Soundslike (Internship, TU Ilmenau, 2023)
 * Vineet S. Kumar: Broadcasting Residual Networks (Internship, RWTH Aachen, 2022)
 * Noel Toms & Prathyusha Velamoor Srinivasan & Varshitha Chamanahalli Ramanna: Music Segmentation using Convolutional Neural Networks (Media Project, TU Ilmenau, 2022)
 * Param Tushar Gadam: Applying Per-Instrument Polyphony Information in the Automatic Transcription of Multitimbral Polyphonic Music (Master Thesis, TU Ilmenau, 2022)
