@@ -6,34 +6,41 @@ excerpt: "About Me..."
 I am a senior scientist at Fraunhofer IDMT with a focus on applied research in music information retrieval & machine listening and I'm currently working on my habilitation at the [TU Ilmenau](https://www.tu-ilmenau.de).
 
 In my research, I combine techniques from machine learning / deep learning and audio signal processing.
+
 On the "ambient sound" side, I work mostly on sound event detection, sound polyphony estimation, and acoustic scene classification and possible applications for urban sound monitoring and bioacoustic research.
-One the "music" side, I'm mostly interested in automatic music transcription and instrument recognition.
+
+On the "music" side, I'm mostly interested in automatic music transcription and instrument recognition.
 
 Besides my research, I have a big passion for playing & teaching music (bass guitar & percussion).
 
-## Current Projects
+## Teaching
 
-- *KI-gestützte Audioanalyse von Musik und Soundscapes* - Bi-weekly seminar at the [HfM Weimar](https://www.hfm-weimar.de), which will be held jointly with Prof. Martin Pfleiderer over the winter semester 2022/23.
-
+- *Computational Analysis of Sound and Music* - full semester lecture at TU Ilmenau in summer semester 2024, which coveres fundamentals in audio signal processing and machine/deep learning, application scenarios in music information retrieval and environmental sound analysis, as well as a practical research project (contact me if you're interest in participating!)
 
 - *Machine Listening for Music and Sound Analysis* - 6-part lecture on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA)
-   - The lecture will be held for the third time this winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/) and will be continuously extended in the upcoming years.
+   - The lecture was be held for the fourth time this winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/) and will be continuously extended in the upcoming years.
 
+- *KI-gestützte Audioanalyse von Musik und Soundscapes* - Bi-weekly seminar at the [HfM Weimar](https://www.hfm-weimar.de), which I hold in cooperation with Prof. Martin Pfleiderer over the winter semester 2022/23.
+
+## Music
 
 - *Groovecell* - Online Learning for Bass and Drums 
    - [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA)
-
 
 - *LMNT7* - Progressive Rock
    - [BandCamp](https://lmnt7.bandcamp.com/)
    
 ## News
 
-- 22.09.2022: I'm happy to co-organize a structured session entitled **Sound Analysis for Music and Audio Signals** ([Details](https://www.daga2023.de/programm/vortraege-und-poster)) at the upcoming [DAGA 2023](https://www.daga2023.de/) together with [Prof. Meinard Müller](https://www.audiolabs-erlangen.de/fau/professor/mueller) and [Prof. Sebastian Stober](https://www.ovgu.de/stober-path-2,9459,14965,15772,15774.html)
+- 10.10.2023: I will co-organize a special session entitled **Machine Learning for Acoustic Scene Understanding** with [Prof. Sebastian Stober](https://sebastianstober.de/) at the [Inter-Noise 2024](https://internoise2024.org/)
+
+- 11.07.2023: I'm happy to share that our article **How Robust are Audio Embeddings for Polyphonic Sound Event Tagging?** was published in the IEEE/ACM Transactions on Audio, Speech, and Language Processing (https://ieeexplore.ieee.org/document/10178070). This has been a great colaboration with [Sascha Grollmisch](https://www.idmt.fraunhofer.de/en/institute/doctorands/grollmisch.html) and [Prof. Meinard Müller](https://www.audiolabs-erlangen.de/fau/professor/mueller)
+
+- 22.09.2022: I co-organized a structured session entitled **Sound Analysis for Music and Audio Signals** ([Details](https://www.daga2023.de/programm/vortraege-und-poster)) at the [DAGA 2023](https://www.daga2023.de/) together with [Prof. Meinard Müller](https://www.audiolabs-erlangen.de/fau/professor/mueller) and [Prof. Sebastian Stober](https://www.ovgu.de/stober-path-2,9459,14965,15772,15774.html)
 
 - 20.07.2022: I'm honored to be invited to be part of the [editorial board of the EURASIP Journal on Audio, Speech, and Music Processing](https://asmp-eurasipjournals.springeropen.com/about/editorial-board)
 
-- 14.07.2022: Our ISMIR paper "Multi-pitch Estimation meets Microphone Mismatch: Applicability of Domain Adaptation" (co-authored with Franca Bittner, Marcel Gonzales, Maike Richter, and Hanna Lukashevich) was accepted!
+- 14.07.2022: Our ISMIR paper **Multi-pitch Estimation meets Microphone Mismatch: Applicability of Domain Adaptation** (co-authored with Franca Bittner, Marcel Gonzales, Maike Richter, and Hanna Lukashevich) was accepted!
 
 - 19.05.2022: I gave a talk at the AES Europe Spring Convention on [Classifying Sounds in Polyphonic Urban Sound Scenes](https://aeseuropespring2022.sched.com/event/10BX8/classifying-sounds-in-polyphonic-urban-sound-scenes-stream-b), where I introduced the [Urban Sound Monitoring (USM) dataset](https://github.com/jakobabesser/usm)
 
