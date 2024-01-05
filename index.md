@@ -7,9 +7,11 @@ excerpt: "About Me..."
 
 🎓 I'm currently working on my habilitation **Computational Analysis of Sounds and Music** at the [TU Ilmenau](https://www.tu-ilmenau.de).
 
-🔬 In my research, I combine techniques from machine learning / deep learning and audio signal processing. I mainly focus on two audio domains:
-  - Environmental/everyday audio: Here, I work mostly on sound event detection, sound polyphony estimation, acoustic scene classification, and applications for urban sound monitoring and bioacoustic research.
-  - Music: Here, I'm mostly interested in automatic music transcription and instrument recognition.
+🔬 In my research, I combine techniques from machine learning / deep learning and audio signal processing. I mainly focus on two application scenarios:
+  
+  - **Environmental Sound Analysis** - Here, I work mostly on sound event detection, sound polyphony estimation, acoustic scene classification, and applications for urban sound monitoring and bioacoustic research.
+  
+  - **Music Information Retrieval** - Here, I'm mostly interested in automatic music transcription and instrument recognition.
 
 ## 👨‍🏫 Teaching
 
