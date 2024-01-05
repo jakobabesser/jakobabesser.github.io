@@ -2,6 +2,8 @@
 layout: resume
 ---
 
+Since 2008, I have supervised many students at various stages of their education.
+
 ## PhD Students (Day-To-Day Supervision)
 
 * M.Sc. Amir Latifi Bidarouni
@@ -10,8 +12,8 @@ layout: resume
 
 ## Former PhD Students
 
-* M.Sc. Christon Ragavan Nadar
 * Dipl.-Inf. Michael Taenzer
+* M.Sc. Christon Ragavan Nadar
 
 ## Supervised & Co-Supervised Student Works
 
