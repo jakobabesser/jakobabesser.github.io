@@ -3,8 +3,6 @@ layout: page
 excerpt: "About Me..."
 ---
 
-## 👨‍🏫 Teaching
-
 💼 I am a senior scientist and principal investigator at [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) with a focus on applied research in music information retrieval & machine listening.
 
 🎓 I'm currently working on my habilitation **Computational Analysis of Sounds and Music** at the [TU Ilmenau](https://www.tu-ilmenau.de).
