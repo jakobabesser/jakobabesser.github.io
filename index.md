@@ -27,10 +27,10 @@ As a central part of my habilitation, I'm active in university teaching:
 
 I have a big passion for playing & teaching music (bass guitar & percussion).
 
-- *Groovecell* - Online Learning for Bass and Drums 
+- **Groovecell** - Online Learning for Bass and Drums 
    - [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA)
 
-- *LMNT7* - Progressive Rock
+- **LMNT7** - Progressive Rock Band (Ilmenau)
    - [BandCamp](https://lmnt7.bandcamp.com/)
    
 ## 🔔 News
