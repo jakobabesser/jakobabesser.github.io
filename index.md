@@ -17,11 +17,11 @@ excerpt: "About Me..."
 
 As a central part of my habilitation, I'm active in university teaching:
 
-  - **Computational Analysis of Sound and Music** - Full semester lecture at TU Ilmenau to be first held in the summer semester 2024, which will cover fundamentals in audio signal processing and machine/deep learning, application scenarios in music information retrieval and environmental sound analysis, as well as a practical research project (contact me if you're interest in participating!)
+  - **Computational Analysis of Sound and Music** - Full semester lecture (English) at TU Ilmenau to be first held in the summer semester 2024, which will cover fundamentals in audio signal processing and machine/deep learning, application scenarios in music information retrieval and environmental sound analysis, as well as a practical research project (contact me if you're interest in participating!)
 
-  - **Machine Listening for Music and Sound Analysis** - 6-part lecture on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA). The lecture took place for the fifth time in the winter semester 2023/2024 at the TU Ilmenau. The lecture & seminar material can be found on the [Lecture Page](https://machinelistening.github.io/).
+  - **Machine Listening for Music and Sound Analysis** - 6-part lecture (English) on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA). The lecture took place for the fifth time in the winter semester 2023/2024 at the TU Ilmenau. The lecture & seminar material can be found on the [Lecture Page](https://machinelistening.github.io/).
 
-  - **KI-gestützte Audioanalyse von Musik und Soundscapes** - Bi-weekly seminar held in the winter semester 2022/2023 at the [HfM Weimar](https://www.hfm-weimar.de) in cooperation with [Prof. Martin Pfleiderer](https://www.hfm-weimar.de/institut-fuer-musikwissenschaft-weimar-jena/lehrende/professorinnen). The lecture material can be found on the [Lecture Page](https://machinelistening.github.io/).
+  - **KI-gestützte Audioanalyse von Musik und Soundscapes** - Bi-weekly seminar (German) in the winter semester 2022/2023 at the [HfM Weimar](https://www.hfm-weimar.de) in cooperation with [Prof. Martin Pfleiderer](https://www.hfm-weimar.de/institut-fuer-musikwissenschaft-weimar-jena/lehrende/professorinnen). The lecture material can be found on the [Lecture Page](https://machinelistening.github.io/).
 
 ## 🎸 🥁 🎧 Music
 
