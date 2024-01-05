@@ -3,26 +3,29 @@ layout: page
 excerpt: "About Me..."
 ---
 
-I am a senior scientist at Fraunhofer IDMT with a focus on applied research in music information retrieval & machine listening and I'm currently working on my habilitation at the [TU Ilmenau](https://www.tu-ilmenau.de).
+## 👨‍🏫 Teaching
 
-In my research, I combine techniques from machine learning / deep learning and audio signal processing.
+💼 I am a senior scientist and principal investigator at [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) with a focus on applied research in music information retrieval & machine listening.
 
-On the "ambient sound" side, I work mostly on sound event detection, sound polyphony estimation, and acoustic scene classification and possible applications for urban sound monitoring and bioacoustic research.
+🎓 I'm currently working on my habilitation **Computational Analysis of Sounds and Music** at the [TU Ilmenau](https://www.tu-ilmenau.de).
 
-On the "music" side, I'm mostly interested in automatic music transcription and instrument recognition.
+🔬 In my research, I combine techniques from machine learning / deep learning and audio signal processing. I mainly focus on two audio domains:
+  - Environmental/everyday audio: Here, I work mostly on sound event detection, sound polyphony estimation, acoustic scene classification, and applications for urban sound monitoring and bioacoustic research.
+  - Music: Here, I'm mostly interested in automatic music transcription and instrument recognition.
 
-Besides my research, I have a big passion for playing & teaching music (bass guitar & percussion).
+## 👨‍🏫 Teaching
 
-## Teaching
+As a central part of my habilitation, I'm active in university teaching:
 
-- *Computational Analysis of Sound and Music* - full semester lecture at TU Ilmenau in summer semester 2024, which coveres fundamentals in audio signal processing and machine/deep learning, application scenarios in music information retrieval and environmental sound analysis, as well as a practical research project (contact me if you're interest in participating!)
+  - **Computational Analysis of Sound and Music** - Full semester lecture at TU Ilmenau to be first held in the summer semester 2024, which will cover fundamentals in audio signal processing and machine/deep learning, application scenarios in music information retrieval and environmental sound analysis, as well as a practical research project (contact me if you're interest in participating!)
 
-- *Machine Listening for Music and Sound Analysis* - 6-part lecture on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA)
-   - The lecture was be held for the fourth time this winter semester at the TU Ilmenau [Lecture Page](https://machinelistening.github.io/) and will be continuously extended in the upcoming years.
+  - **Machine Listening for Music and Sound Analysis** - 6-part lecture on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA). The lecture took place for the fifth time in the winter semester 2023/2024 at the TU Ilmenau. The lecture & seminar material can be found on the [Lecture Page](https://machinelistening.github.io/).
 
-- *KI-gestützte Audioanalyse von Musik und Soundscapes* - Bi-weekly seminar at the [HfM Weimar](https://www.hfm-weimar.de), which I hold in cooperation with Prof. Martin Pfleiderer over the winter semester 2022/23.
+  - **KI-gestützte Audioanalyse von Musik und Soundscapes** - Bi-weekly seminar held in the winter semester 2022/2023 at the [HfM Weimar](https://www.hfm-weimar.de) in cooperation with [Prof. Martin Pfleiderer](https://www.hfm-weimar.de/institut-fuer-musikwissenschaft-weimar-jena/lehrende/professorinnen). The lecture material can be found on the [Lecture Page](https://machinelistening.github.io/).
 
-## Music
+## 🎸 🥁 🎧 Music
+
+I have a big passion for playing & teaching music (bass guitar & percussion).
 
 - *Groovecell* - Online Learning for Bass and Drums 
    - [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA)
@@ -30,7 +33,13 @@ Besides my research, I have a big passion for playing & teaching music (bass gui
 - *LMNT7* - Progressive Rock
    - [BandCamp](https://lmnt7.bandcamp.com/)
    
-## News
+## 🔔 News
+
+- 12.12.2023: I'm happy to share that our journal article **Human and Machine Performance in Counting Sound Classes in Single-Channel Soundscapes** has been published in the Journal of the [Audio Engineering Society (JAES)](https://www.aes.org/e-lib/browse.cfm?elib=22348). This has been a great collaboration with my IDMT colleagues Asad Ullah, [Sascha Grollmisch](https://www.linkedin.com/in/sascha-grollmisch-533345119) and Sebastian Ziegler.
+   
+- 06.12.2023: I was invited by [Prof. Dr.-Ing. Anna Kruspe](https://www.th-nuernberg.de/person/kruspe-anna/) to give two guest lectures on **Environmental Sound Analysis** at the [Technische Hochschule Nürnberg Georg Simon Ohm](https://www.th-nuernberg.de/).
+   
+- I will co-organize a special session entitled **Machine Learning for Acoustic Scene Understanding** with [Prof. Sebastian Stober](https://sebastianstober.de/) at the [Inter-Noise 2024](https://internoise2024.org/)
 
 - 10.10.2023: I will co-organize a special session entitled **Machine Learning for Acoustic Scene Understanding** with [Prof. Sebastian Stober](https://sebastianstober.de/) at the [Inter-Noise 2024](https://internoise2024.org/)
 
