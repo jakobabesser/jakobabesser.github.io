@@ -6,6 +6,7 @@ Since 2008, I have supervised many students at various stages of their education
 
 ## PhD Students (Day-To-Day Supervision)
 
+* M.Sc. Yuxuan He
 * M.Sc. Amir Latifi Bidarouni
 * Dipl.-Ing. Sascha Grollmisch
 * Dipl.-Ing. Christian Kehling
