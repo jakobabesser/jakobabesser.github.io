@@ -18,6 +18,8 @@ Since 2008, I have supervised many students at various stages of their education
 
 ## Supervised & Co-Supervised Student Works
 
+* Robert Viehweg: Deep Learning based Drum Transcription (Bachelor Thesis, TU Ilmenau, 2024)
+* Rasmus Merten: Real-time Piano Multipitch Estimation using Convolutional Neural Networks (Master Thesis, TU Ilmenau, 2024)
 * Juan Sebastián Páez Medina: Klassifizierung von Musikstilen anhand KI-gestützter Methoden (Bachelor Thesis, HfM Weimar, 2024)
 * Asad Ullah: Improving a System for Bioacoustics Sound Event Detection based on Few-Shot Learning (Master Thesis, TU Ilmenau, 2023)
 * Jakob Lerch: Generation of Symbolic Music Based on MusicVAE (Bachelor Thesis, TU Ilmenau, 2023)
