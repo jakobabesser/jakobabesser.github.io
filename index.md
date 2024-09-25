@@ -35,6 +35,10 @@ I have a big passion for playing & teaching music (bass guitar & percussion).
    
 ## 🔔 News
 
+- 24.09.2024: I gave an introduction lecture entitled **Computational Audio Analysis** at the [Master Science Camp "Biodiversitätsmonitoring – komplexe Signalanalyse und KI Anwendungen zur Vogelstimmenerkennung"](https://www.tu-ilmenau.de/studium/im-studium/schluesselkompetenzen/allianz-thuering-science-camps) at the TU Ilmenau yesterday. 
+
+- 21.09.2024: I will organize a special session entitled **Acoustic Scene Analysis using Artificial Intelligence** at the [DAS/DAGA 2025 - 51st Annual Meeting on Acoustics](https://www.das-daga2025.eu/) in Copenhagen, Denmark from March 17-20 2025 together with [Dr. Toni Heittola](https://homepages.tuni.fi/toni.heittola/). 
+
 - 20./21.03.2024: I co-organized a structured session entitled **Sound Analysis for Music and Audio Signals** at the [DAGA 2024](https://www.daga2024.de/) together with [Prof. Meinard Müller](https://www.audiolabs-erlangen.de/fau/professor/mueller) and [Prof. Stefan Balke](https://stefan.balke.at/). We had 15 great presentations covering topics from music analysis, speech processing, as well as environmental sound analysis.
 
 - 12.12.2023: I'm happy to share that our journal article **Human and Machine Performance in Counting Sound Classes in Single-Channel Soundscapes** has been published in the Journal of the [Audio Engineering Society (JAES)](https://www.aes.org/e-lib/browse.cfm?elib=22348). This has been a great collaboration with my IDMT colleagues Asad Ullah, [Sascha Grollmisch](https://www.linkedin.com/in/sascha-grollmisch-533345119) and Sebastian Ziegler.
