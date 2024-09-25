@@ -44,8 +44,6 @@ I have a big passion for playing & teaching music (bass guitar & percussion).
 - 12.12.2023: I'm happy to share that our journal article **Human and Machine Performance in Counting Sound Classes in Single-Channel Soundscapes** has been published in the Journal of the [Audio Engineering Society (JAES)](https://www.aes.org/e-lib/browse.cfm?elib=22348). This has been a great collaboration with my IDMT colleagues Asad Ullah, [Sascha Grollmisch](https://www.linkedin.com/in/sascha-grollmisch-533345119) and Sebastian Ziegler.
    
 - 06.12.2023: I was invited by [Prof. Dr.-Ing. Anna Kruspe](https://www.th-nuernberg.de/person/kruspe-anna/) to give two guest lectures on **Environmental Sound Analysis** at the [Technische Hochschule Nürnberg Georg Simon Ohm](https://www.th-nuernberg.de/).
-   
-- I will co-organize a special session entitled **Machine Learning for Acoustic Scene Understanding** with [Prof. Sebastian Stober](https://sebastianstober.de/) at the [Inter-Noise 2024](https://internoise2024.org/)
 
 - 10.10.2023: I will co-organize a special session entitled **Machine Learning for Acoustic Scene Understanding** with [Prof. Sebastian Stober](https://sebastianstober.de/) at the [Inter-Noise 2024](https://internoise2024.org/)
 
