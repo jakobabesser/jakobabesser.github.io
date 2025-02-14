@@ -5,6 +5,8 @@ excerpt: "About Me..."
 
 💼 I am a senior scientist and principal investigator at [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) with a focus on applied research in music information retrieval & machine listening.
 
+💼 I am also a Postdoctoral Researcher at the International Audio Laboratories Erlangen in the group of [Prof. Dr. Meinard Müller](https://www.audiolabs-erlangen.de/fau/professor/mueller)
+
 🎓 I'm currently working on my habilitation **Computational Analysis of Sounds and Music** at the [TU Ilmenau](https://www.tu-ilmenau.de).
 
 🔬 In my research, I combine techniques from machine learning / deep learning and audio signal processing. I mainly focus on two application scenarios:
@@ -23,16 +25,6 @@ As a central part of my habilitation, I'm active in university teaching:
 
   - **KI-gestützte Audioanalyse von Musik und Soundscapes** - Bi-weekly seminar (German) in the winter semester 2022/2023 at the [HfM Weimar](https://www.hfm-weimar.de) in cooperation with [Prof. Martin Pfleiderer](https://www.hfm-weimar.de/institut-fuer-musikwissenschaft-weimar-jena/lehrende/professorinnen). The lecture material can be found on the [Lecture Page](https://machinelistening.github.io/).
 
-## 🎸 🥁 🎧 Music
-
-I have a big passion for playing & teaching music (bass guitar & percussion).
-
-- **Groovecell** - Online Learning for Bass and Drums 
-   - [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA)
-
-- **LMNT7** - Progressive Rock Band (Ilmenau)
-   - [BandCamp](https://lmnt7.bandcamp.com/)
-   
 ## 🔔 News
 
 - 24.09.2024: I gave an introduction lecture entitled **Computational Audio Analysis** at the [Master Science Camp "Biodiversitätsmonitoring – komplexe Signalanalyse und KI Anwendungen zur Vogelstimmenerkennung"](https://www.tu-ilmenau.de/studium/im-studium/schluesselkompetenzen/allianz-thuering-science-camps) at the TU Ilmenau yesterday. 
@@ -75,4 +67,14 @@ I have a big passion for playing & teaching music (bass guitar & percussion).
 
 - I'm a guest editor for the EURASIP Journal on Audio, Speech, and Music Processing (JASM) call: [Recent advances in computational sound scene analysis](https://asmp-eurasipjournals.springeropen.com/ssoundscene) (together with Emmanouil Benetos, Annamaria Mesaros, Wenwu Wang)
 
+## 🎸 🥁 🎧 Music
+
+I have a big passion for playing & teaching music (bass guitar & percussion).
+
+- **Groovecell** - Online Learning for Bass and Drums 
+   - [Youtube Channel](https://www.youtube.com/channel/UCG_MYElsQmKc4AJ7ounTKmA)
+
+- **LMNT7** - Progressive Rock Band (Ilmenau)
+   - [BandCamp](https://lmnt7.bandcamp.com/)
+   
 
