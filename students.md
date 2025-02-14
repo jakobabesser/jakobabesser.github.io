@@ -2,7 +2,7 @@
 layout: resume
 ---
 
-Since 2008, I have supervised many students at various stages of their education.
+Since 2008, I have supervised and mentored many students at various stages of their education.
 
 ## PhD Students (Day-To-Day Supervision)
 
@@ -18,6 +18,7 @@ Since 2008, I have supervised many students at various stages of their education
 
 ## Supervised & Co-Supervised Student Works
 
+* Josef Häusel: KI-Technologien in Audiovisuellen Vertonungsprozessen (Bachelor Thesis, Staatliche Hochschule für Musik Trossingen & Hochschule Furtwangen, 2025)
 * Robert Viehweg: Deep Learning based Drum Transcription (Bachelor Thesis, TU Ilmenau, 2024)
 * Rasmus Merten: Real-time Piano Multipitch Estimation using Convolutional Neural Networks (Master Thesis, TU Ilmenau, 2024)
 * Juan Sebastián Páez Medina: Klassifizierung von Musikstilen anhand KI-gestützter Methoden (Bachelor Thesis, HfM Weimar, 2024)

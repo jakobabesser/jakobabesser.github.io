@@ -7,9 +7,9 @@ Senior Scientist (Fraunhofer IDMT) & Co-Investigator of the DFG-funded project *
 
 Postdoctoral Researcher (International Audio Laboratories Erlangen)
 
-## CV & Publication List
+## List of Publications
 
-* [**CV + Publications (last update 25.09.2024) - PDF**](cv_jakob_abesser_240925.pdf)
+* [**List of Publications (last update 14.02.205) - PDF**](References_Abesser_250214.pdf)
 
 <!-- ### Footer
 
