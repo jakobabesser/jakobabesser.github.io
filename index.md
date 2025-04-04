@@ -27,6 +27,10 @@ As a central part of my habilitation, I'm active in university teaching:
 
 ## 🔔 News
 
+- 01.04.2025: I contributed a [blog post](https://www.veraai.eu/posts/veraai-at-daga-2025) on the vera.ai project website about my recent visit to the [51st Annual Meeting on Acoustics (DAS/DAGA 2025)](https://www.das-daga2025.eu/) in Copenhagen
+
+- 20.03.2025: I was interviewd for the second episode of the [DLG Podcast Agriculture: BioMonitor4CAP Episode 2](https://www.dlg.org/en/mediacenter/dlg-podcast/agriculture/dlg-podcast-agriculture-biomonitor4cap-episode-2) where I talk about our research at [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) on bioacoustic analyses 🦅🦆🦇🦗 as part of the [BioMonitor4CAP](https://www.biomonitor4cap.eu/en/) EU project
+
 - 24.09.2024: I gave an introduction lecture entitled **Computational Audio Analysis** at the [Master Science Camp "Biodiversitätsmonitoring – komplexe Signalanalyse und KI Anwendungen zur Vogelstimmenerkennung"](https://www.tu-ilmenau.de/studium/im-studium/schluesselkompetenzen/allianz-thuering-science-camps) at the TU Ilmenau yesterday. 
 
 - 21.09.2024: I will organize a special session entitled **Acoustic Scene Analysis using Artificial Intelligence** at the [DAS/DAGA 2025 - 51st Annual Meeting on Acoustics](https://www.das-daga2025.eu/) in Copenhagen, Denmark from March 17-20 2025 together with [Dr. Toni Heittola](https://homepages.tuni.fi/toni.heittola/). 
