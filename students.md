@@ -18,6 +18,7 @@ Since 2008, I have supervised and mentored many students at various stages of th
 
 ## Supervised & Co-Supervised Student Works
 
+* Anjana Rajasekhar: Assessing the Effectiveness of Objuscation Techniques for Speech Privacy Preservation and Their Impact on Utility (Master Thesis, Audiolabs + FAU Erlangen-Nürnberg, 2025)
 * Josef Häusel: KI-Technologien in Audiovisuellen Vertonungsprozessen (Bachelor Thesis, Staatliche Hochschule für Musik Trossingen & Hochschule Furtwangen, 2025)
 * Robert Viehweg: Deep Learning based Drum Transcription (Bachelor Thesis, TU Ilmenau, 2024)
 * Rasmus Merten: Real-time Piano Multipitch Estimation using Convolutional Neural Networks (Master Thesis, TU Ilmenau, 2024)
