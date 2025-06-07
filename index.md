@@ -27,7 +27,7 @@ As a central part of my habilitation, I'm active in university teaching:
 
 ## 🔔 News
 
-- 07.06.2025: I'm happy that two papers I co-authored were accepted to the [025 AES International Conference on Artificial Intelligence and Machine Learning for Audio](https://aes2.org/event-extra/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/)
+- 07.06.2025: I'm happy that two papers I co-authored were accepted to the [2025 AES International Conference on Artificial Intelligence and Machine Learning for Audio](https://aes2.org/event-extra/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/)
 
 - 01.04.2025: I contributed a [blog post](https://www.veraai.eu/posts/veraai-at-daga-2025) on the vera.ai project website about my recent visit to the [51st Annual Meeting on Acoustics (DAS/DAGA 2025)](https://www.das-daga2025.eu/) in Copenhagen
 
