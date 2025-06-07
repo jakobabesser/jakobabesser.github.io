@@ -27,6 +27,8 @@ As a central part of my habilitation, I'm active in university teaching:
 
 ## 🔔 News
 
+- 07.06.2025: I'm happy that two papers I co-authored were accepted to the [025 AES International Conference on Artificial Intelligence and Machine Learning for Audio](https://aes2.org/event-extra/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/)
+
 - 01.04.2025: I contributed a [blog post](https://www.veraai.eu/posts/veraai-at-daga-2025) on the vera.ai project website about my recent visit to the [51st Annual Meeting on Acoustics (DAS/DAGA 2025)](https://www.das-daga2025.eu/) in Copenhagen
 
 - 20.03.2025: I was interviewd for the second episode of the [DLG Podcast Agriculture: BioMonitor4CAP Episode 2](https://www.dlg.org/en/mediacenter/dlg-podcast/agriculture/dlg-podcast-agriculture-biomonitor4cap-episode-2) where I talk about our research at [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) on bioacoustic analyses 🦅🦆🦇🦗 as part of the [BioMonitor4CAP](https://www.biomonitor4cap.eu/en/) EU project
