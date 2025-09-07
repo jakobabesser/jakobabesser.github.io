@@ -3,19 +3,24 @@ layout: page
 excerpt: "Teaching Activities"
 ---
 
-## Upcoming Teaching 
+## 👨‍🏫 Teaching
 
-- Bi-weekly seminar _KI-gestützte Audioanalyse von Musik und Soundscapes_ (October 2022 - March 2023, University of Music Franz Liszt, Weimar, Germany)
-  - Introductory course on Python programming, fundamental techniques from machine learning, deep learning, and audio signal processing, application for sound event detection in music and soundscape recordings 
+### Upcoming Lectures
 
-- Lecture series _Machine Listening for Music and Sound Recognition_, part of the _Audio Systems Technology_ lecture (November 2022, Technische Universität, Ilmenau, Germany)
-  - [Lecture Page](https://machinelistening.github.io/)
+In the winter semester 2025/2026, I will teach
 
-## Past Teaching Activities
+  - **CH_CASM_M** - **Computational Analysis of Sound and Music**
+    
+    - Full semester lecture (English) at University of Bamberg, which is 
+    covering fundamentals in audio signal processing and machine/deep 
+    learning, application scenarios in music information retrieval and 
+    environmental sound analysis, as well as a practical research project. 
+    - Check out the [Lecture Page](https://machinelistening.github.io/casm/) to access the lecture slides and Jupyter notebooks from previous editions.
 
-- Lecture series _Machine Listening for Music and Sound Recognition_, part of the _Audio Systems Technology_ lecture (November 2022, Technische Universität, Ilmenau, Germany, November 2021 - February 2022)
-  - Fundamentals of audio signal processing, machine learning, and deep learning
-  - Applications for machine listening and music information retrieval
-  - [Lecture Page](https://machinelistening.github.io/)
+### Past Lectures
 
-- Teaching _Music Information Retrieval_ lectures as part of the __Audio Systems Technology__ lecture held by Prof. Karlheinz Brandenburg (2015-2020, 2-3 lectures each year)
+  - **Machine Listening for Music and Sound Analysis** 
+    - 6-part lecture (English) on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA). The lecture took place for the fifth time in the winter semester 2023/2024 at the TU Ilmenau. The lecture & seminar material can be found on the [Lecture Page](https://machinelistening.github.io/).
+
+  - **KI-gestützte Audioanalyse von Musik und Soundscapes** 
+      - Bi-weekly seminar (German) in the winter semester 2022/2023 at the [HfM Weimar](https://www.hfm-weimar.de) in cooperation with [Prof. Martin Pfleiderer](https://www.hfm-weimar.de/institut-fuer-musikwissenschaft-weimar-jena/lehrende/professorinnen). The lecture material can be found on the [Lecture Page](https://machinelistening.github.io/).

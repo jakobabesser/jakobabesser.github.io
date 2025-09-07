@@ -3,32 +3,32 @@ layout: page
 excerpt: "About Me..."
 ---
 
-💼 I am a senior scientist and principal investigator at [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) with a focus on applied research in music information retrieval & machine listening.
+💼 Starting in September 2025, I will be a **tenure-track professor for "Computational Humanities"** at the [University of Bamberg](https://www.uni-bamberg.de/en/) 
+focussing on applications of audio processing for digital humanities research in the fields of Music Information Retrieval, Soundscape, DCASE, Bioacoustics, and Ecoacoustics.
 
-💼 I am also a Postdoctoral Researcher at the International Audio Laboratories Erlangen in the group of [Prof. Dr. Meinard Müller](https://www.audiolabs-erlangen.de/fau/professor/mueller)
+💼 I am still affiliated with [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) as a senior scientist
 
-🎓 I'm currently working on my habilitation **Computational Analysis of Sounds and Music** at the [TU Ilmenau](https://www.tu-ilmenau.de).
+🎓 I'm currently working towards my habilitation degree at the [Technische Universität Ilmenau](https://www.tu-ilmenau.de).
 
 🔬 In my research, I combine techniques from machine learning / deep learning and audio signal processing. I mainly focus on two application scenarios:
   
-  - **Environmental Sound Analysis** - Here, I work mostly on sound event detection, sound polyphony estimation, acoustic scene classification, and applications for urban sound monitoring and bioacoustic research.
+  - **Soundscape / DCASE** - Here, I work mostly on sound event detection, sound polyphony estimation, acoustic scene classification, and applications for urban sound monitoring and bioacoustic research.
   
   - **Music Information Retrieval** - Here, I'm mostly interested in automatic music transcription and instrument recognition.
 
-## 👨‍🏫 Teaching
-
-As a central part of my habilitation, I'm active in university teaching:
-
-  - **Computational Analysis of Sound and Music** - Full semester lecture (English) at TU Ilmenau in the summer semester 2024, which is covering fundamentals in audio signal processing and machine/deep learning, application scenarios in music information retrieval and environmental sound analysis, as well as a practical research project. Check out the [Lecture Page](https://machinelistening.github.io/casm/) to follow along and access the lecture slides and Jupyter notebooks.
-
-  - **Machine Listening for Music and Sound Analysis** - 6-part lecture (English) on audio signal processing & deep learning applied for music information retrieval (MIR) and environmental sound analysis (ESA). The lecture took place for the fifth time in the winter semester 2023/2024 at the TU Ilmenau. The lecture & seminar material can be found on the [Lecture Page](https://machinelistening.github.io/).
-
-  - **KI-gestützte Audioanalyse von Musik und Soundscapes** - Bi-weekly seminar (German) in the winter semester 2022/2023 at the [HfM Weimar](https://www.hfm-weimar.de) in cooperation with [Prof. Martin Pfleiderer](https://www.hfm-weimar.de/institut-fuer-musikwissenschaft-weimar-jena/lehrende/professorinnen). The lecture material can be found on the [Lecture Page](https://machinelistening.github.io/).
 
 ## 🔔 News
 
-- 07.06.2025: I'm happy that two papers I co-authored were accepted to the [2025 AES International Conference on Artificial Intelligence and Machine Learning for Audio](https://aes2.org/event-extra/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/)
+- 05.06.2025: I'm very happy that two papers I co-authored were accepted to the [DCASE Workshop 2025](https://dcase.community/workshop2025/index)
+  - *Dilip Harish, Jakob Abeßer: A Three-Level Evaluation Protocoll for Acoustic Scene Understanding of Large Language Audio Models*
+  - *Yuxuan He, Alexander Raake, Jakob Abeßer: Enhancing Multiscale Features for Efficient Acoustic Scene Classification with One-Dimensional Separate CNN*
+  
+- 01.09.2025: Today is my first working day as a tenure-track professor at the University of Bamberg :) 
 
+- 07.06.2025: I'm happy that two papers I co-authored were accepted to the [2025 AES International Conference on Artificial Intelligence and Machine Learning for Audio](https://aes2.org/event-extra/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/)
+  - *Ravi Kumar, Sascha Grollmisch, and Jakob Abeßer: Improvement and Cross-Domain Evaluation of SlowFast Networks* 
+  - *Yuxuan He, Alireza Molla Ali Hosseini, Jakob Abeßer, Lina Jaurigue, Alexander Raake, and Kathy Lüdge: From CNN to Reservoir Computing: A New Perspective on
+Acoustic Scene Classification* 
 - 01.04.2025: I contributed a [blog post](https://www.veraai.eu/posts/veraai-at-daga-2025) on the vera.ai project website about my recent visit to the [51st Annual Meeting on Acoustics (DAS/DAGA 2025)](https://www.das-daga2025.eu/) in Copenhagen
 
 - 20.03.2025: I was interviewd for the second episode of the [DLG Podcast Agriculture: BioMonitor4CAP Episode 2](https://www.dlg.org/en/mediacenter/dlg-podcast/agriculture/dlg-podcast-agriculture-biomonitor4cap-episode-2) where I talk about our research at [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) on bioacoustic analyses 🦅🦆🦇🦗 as part of the [BioMonitor4CAP](https://www.biomonitor4cap.eu/en/) EU project
