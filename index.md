@@ -3,7 +3,7 @@ layout: page
 excerpt: "About Me..."
 ---
 
-💼 Starting in September 2025, I will be a **tenure-track professor for "Computational Humanities"** at the [University of Bamberg](https://www.uni-bamberg.de/en/) 
+💼 Since 2025, I am a **tenure-track professor for "Computational Humanities"** at the [University of Bamberg](https://www.uni-bamberg.de/en/) 
 focussing on applications of audio processing for digital humanities research in the fields of Music Information Retrieval, Soundscape, DCASE, Bioacoustics, and Ecoacoustics.
 
 💼 I am still affiliated with [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) as a senior scientist
