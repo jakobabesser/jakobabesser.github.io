@@ -8,19 +8,23 @@ Since 2008, I have supervised and mentored many students at various stages of th
 
 * M.Sc. Yuxuan He
 * M.Sc. Amir Latifi Bidarouni
-* Dipl.-Ing. Sascha Grollmisch
-* Dipl.-Ing. Christian Kehling
 
 ## Former PhD Students
 
+* Dr.-Ing. Sascha Grollmisch
+* Dipl.-Ing. Christian Kehling
 * Dipl.-Inf. Michael Taenzer
 * M.Sc. Christon Ragavan Nadar
 
 ## Supervised & Co-Supervised Student Works
 
+* Franca Bittner: Melody Extraction of Music Recordings Using Transformer Models (Master thesis, TU Ilmenau, 2026)
+* Daniel Wägner: Automatic Music Transcription and Tuning Frequency Estimation for Guitar (Master thesis, Saarland University, 2025)
+* Bora Aydin: Zero- and Few-Shot Learning for Marine Mammal Detection and Classification (Master thesis, University of Toulon, Norwegian University of Science and Technology - NTNU, 2025)
 * Bharanidharan Jayakumar: Enhancing Bird Song Field Recordings from Noisy Environments using Source Separation Techniques (Research Project, TU Ilmenau, 2025)
 * Anjana Rajasekhar: Assessing the Effectiveness of Objuscation Techniques for Speech Privacy Preservation and Their Impact on Utility (Master Thesis, Audiolabs + FAU Erlangen-Nürnberg, 2025)
 * Josef Häusel: KI-Technologien in Audiovisuellen Vertonungsprozessen (Bachelor Thesis, Staatliche Hochschule für Musik Trossingen & Hochschule Furtwangen, 2025)
+* Zhiwei Liang: Self-Similarity Based Representations of Soundscape Recordings for Acoustic Scene Classification (Master thesis, Technische Universität München, 2024)
 * Robert Viehweg: Deep Learning based Drum Transcription (Bachelor Thesis, TU Ilmenau, 2024)
 * Rasmus Merten: Real-time Piano Multipitch Estimation using Convolutional Neural Networks (Master Thesis, TU Ilmenau, 2024)
 * Juan Sebastián Páez Medina: Klassifizierung von Musikstilen anhand KI-gestützter Methoden (Bachelor Thesis, HfM Weimar, 2024)
