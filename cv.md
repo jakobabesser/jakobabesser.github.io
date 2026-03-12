@@ -2,7 +2,7 @@
 layout: resume
 ---
 
-* [**List of Publications (last update 08.09.2025) - PDF**](publications.pdf)
+* [**List of Publications (last update 12.03.2026) - PDF**](publications.pdf)
 
 <!-- ### Footer
 
