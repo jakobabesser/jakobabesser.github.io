@@ -6,11 +6,17 @@ excerpt: "About Me..."
 ## About me (short CV)
 
 I received my Diploma degree in computer engineering from [Technische Universität Ilmenau](https://www.tu-ilmenau.de/en), Germany, in 2008 and the Ph.D. degree in media technology under supervision of [Gerald Schuller](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-elektrotechnik-und-informationstechnik/profil/institute-und-fachgebiete/fachgebiet-angewandte-mediensysteme/team) in 2014. 
+
 Since 2008, I have been affiliated with the [Fraunhofer Institute for Digital Media Technology](https://www.idmt.fraunhofer.de/)(IDMT), Ilmenau. 
+
 In 2010, I completed a research stay at the [Centre of Excellence in Music, Mind, Body and Brain, University of Jyväskylä, Finland](https://www.jyu.fi/en/research/centres-of-excellence/mmbb) and collaborated with [Petri Toiviainen](https://www.jyu.fi/en/people/petri-toiviainen), [Olivier Lartillot](https://about.me/olli), and [Tuomas Eerola](https://www.durham.ac.uk/staff/tuomas-eerola/). 
+
 From 2012 to 2017, I also worked on the [Jazzomat research project](https://jazzomat.hfm-weimar.de/) at the [University of Music Franz Liszt, Weimar, Germany](https://www.hfm-weimar.de/en/start) lead by [Martin Pfleiderer](https://www.hfm-weimar.de/geschichte-des-jazz-und-der-populaeren-musik/lehrende-und-mitarbeiterinnen). 
+
 Since 2018, I have been a Principal Investigator and, since 2021, a Senior Scientist with Fraunhofer IDMT. 
+
 Between 2022 and 2025, I was a visiting postdoctoral researcher with the Semantic Audio Processing Group at [International Audio Laboratories](https://audiolabs-erlangen.de/), Erlangen, Germany lead by [Meinard Müller](https://www.audiolabs-erlangen.de/fau/professor/mueller). 
+
 In September 2025, I took up a **tenure-track professorship** for [**Computational Humanities**](https://www.uni-bamberg.de/ch/) at the [University of Bamberg](https://www.uni-bamberg.de/), Germany.
 
 My research interests include 
