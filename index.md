@@ -6,9 +6,9 @@ excerpt: "About Me..."
 💼 Since 2025, I am a **tenure-track professor for "Computational Humanities"** at the [University of Bamberg](https://www.uni-bamberg.de/en/) 
 focussing on applications of audio processing for digital humanities research in the fields of Music Information Retrieval, Soundscape, DCASE, Bioacoustics, and Ecoacoustics.
 
-💼 I am still affiliated with [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/) as a senior scientist
+💼 I am still affiliated with [Fraunhofer IDMT](https://www.idmt.fraunhofer.de/).
 
-🎓 I'm currently working towards my habilitation degree at the [Technische Universität Ilmenau](https://www.tu-ilmenau.de).
+🎓 I have submitted and will soon defend my habilitation theses at the [Technische Universität Ilmenau](https://www.tu-ilmenau.de).
 
 🔬 In my research, I combine techniques from machine learning / deep learning and audio signal processing. I mainly focus on two application scenarios:
   
@@ -19,12 +19,14 @@ focussing on applications of audio processing for digital humanities research in
 
 ## 🔔 News
 
+- 01.03.2026: I am very happy to welcome [Marcello Lussana](https://www.uni-bamberg.de/ch/team/dr-marcello-lussana/) as the first post-doctoral researcher in my group in Bamberg.
+
+- 01.09.2025: Today is my first working day as a tenure-track professor at the University of Bamberg :) 
+
 - 05.06.2025: I'm very happy that two papers I co-authored were accepted to the [DCASE Workshop 2025](https://dcase.community/workshop2025/index)
   - *Dilip Harish, Jakob Abeßer: A Three-Level Evaluation Protocoll for Acoustic Scene Understanding of Large Language Audio Models*
   - *Yuxuan He, Alexander Raake, Jakob Abeßer: Enhancing Multiscale Features for Efficient Acoustic Scene Classification with One-Dimensional Separate CNN*
-  
-- 01.09.2025: Today is my first working day as a tenure-track professor at the University of Bamberg :) 
-
+    
 - 07.06.2025: I'm happy that two papers I co-authored were accepted to the [2025 AES International Conference on Artificial Intelligence and Machine Learning for Audio](https://aes2.org/event-extra/2025-aes-international-conference-on-artificial-intelligence-and-machine-learning-for-audio/)
   - *Ravi Kumar, Sascha Grollmisch, and Jakob Abeßer: Improvement and Cross-Domain Evaluation of SlowFast Networks* 
   - *Yuxuan He, Alireza Molla Ali Hosseini, Jakob Abeßer, Lina Jaurigue, Alexander Raake, and Kathy Lüdge: From CNN to Reservoir Computing: A New Perspective on
