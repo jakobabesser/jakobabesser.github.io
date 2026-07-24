@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jakob Abeßer — Software &amp; Data</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html">Projects</a>
+      <a href="teaching.html">Teaching</a>
+      <a class="active" href="software.html">Software &amp; Data</a>
+      <a href="students.html">Students</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Software &amp; Data</h1>
+
+    <h2>Datasets</h2>
+
+    <h3>Environmental Sound Analysis & Bioacoustics</h3>
+    <ul class="pub-list">
+      <li><a href="https://zenodo.org/records/21327325">PolyBirdMix Dataset</a> — Large-scale synthetic polyphonic bird call dataset for estimating multiple vocalizing individuals per recording.</li>
+      <li><a href="https://github.com/jakobabesser/USM">Urban Sound Monitoring (USM) Dataset</a> — Polyphonic sound event tagging in urban monitoring scenarios.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/traffic.html">IDMT-TRAFFIC</a> — Audio database for acoustic traffic monitoring.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/idmt-fl.html">IDMT-FL</a> — Federated learning datasets (DESED-FL and URBAN-FL) for sound event detection.</li>
+    </ul>
+
+    <h3>Music Analysis</h3>
+    <ul class="pub-list">
+      <li><a href="https://jazzomat.hfm-weimar.de/dbformat/dboverview.html">Weimar Jazz Database</a> — Comprehensive database for jazz research (Jazzomat project).</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/bass.html">IDMT-SMT-Bass</a> — Audio database for bass transcription and signal processing.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/guitar.html">IDMT-SMT-Guitar</a> — Audio database for guitar transcription and signal processing.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/drums.html">IDMT-SMT-Drums</a> — Audio database for drum transcription and source separation.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/audio_effects.html">IDMT-SMT-Audio-Effects</a> — Audio database for automatic effect detection in electric guitar and bass recordings.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/bass_synthesis.html">IDMT-SMT-Bass Synthesis</a> — Digital waveguide model of electric bass guitar with different playing techniques.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/bass_lines.html">IDMT-SMT-Bass-Single-Track</a> — Single-track bass recordings for transcription.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/chords.html">IDMT-SMT-Chords</a> — Database for automatic chord estimation and music transcription.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/chord-sequences.html">IDMT-SMT-Chord-Sequences</a> — Dataset for time-dependent harmonic similarity between chord sequences.</li>
+      <li><a href="https://www.idmt.fraunhofer.de/en/publications/datasets/piano-mm.html">IDMT-PIANO-MM</a> — Dataset for piano transcription evaluation under microphone mismatch conditions.</li>
+    </ul>
+
+    <h2>Software &amp; Models</h2>
+    <ul class="stack">
+      <li><a href="https://github.com/jakobabesser/walking_bass_transcription_dnn">Walking Bass Transcription using a DNN</a> — Automatic transcription of walking bass lines in jazz recordings (Python code + trained model).</li>
+      <li><a href="https://github.com/jakobabesser/bassunet">bassunet</a> — Bass transcription using a U-Net Model (Python code + trained model).</li>
+      <li><a href="https://jazzomat.hfm-weimar.de/download/download.html">MeloSpySuite &amp; MeloSpyGUI</a> — Command-line tools and GUI for feature extraction and pattern search in symbolic audio datasets.</li>
+    </ul>
+  </main>
+
+  <footer>© <span id="year"></span> Jakob Abeßer.
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>
+
