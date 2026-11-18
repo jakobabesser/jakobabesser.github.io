@@ -218,7 +218,6 @@ footer {
   margin-left: auto;      /* push to the right edge */
   object-fit: contain;    /* never crop the logo */
   border-radius: 0;       /* the logo is already circular */
-  background: none;   /* remove the grey from .photo */
   box-shadow: none;       /* drop any photo shadow/border, if present */
   border: none;
 }
