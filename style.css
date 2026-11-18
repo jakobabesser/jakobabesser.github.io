@@ -208,3 +208,16 @@ footer {
   .timeline > li { flex-direction: column; gap: 0.1rem; }
   .timeline .years { flex-basis: auto; }
 }
+
+/* Lab logo on the right of the intro, same size as the portrait */
+.intro {
+  display: flex;
+  align-items: center;
+}
+.intro .logo {
+  margin-left: auto;      /* push to the right edge */
+  object-fit: contain;    /* never crop the logo */
+  border-radius: 0;       /* the logo is already circular */
+  box-shadow: none;       /* drop any photo shadow/border, if present */
+  border: none;
+}
